@@ -1,6 +1,7 @@
 ---
 date: 2020-06-06
 title: "Documentation Driven Design"
+layout: layouts/post.njk
 ---
 I started this year with a goal; develop features faster without sacrificing quality. I soon realized that I couldn't find the balance between quality and speed and became increasingly stressed at work. Unfortunately, for the people and animals in my household, this manifested in a very grumpy developer.
 

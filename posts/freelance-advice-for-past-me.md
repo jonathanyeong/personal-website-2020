@@ -1,6 +1,7 @@
 ---
 date: 2017-07-12
 title: "Freelance Advice for Past me"
+layout: layouts/post.njk
 ---
 When I first made the choice to become a freelancer and I had no idea where to begin. I reached out to my old manager who was the sales lead/product manager at my old company. We covered a range of topics starting with how to get leads. To copyrighting a business logo. To dealing with taxes. After the conversation, I had a grasp on what I needed to do. I’ve been a freelancer for 7 months now and I’ve realized that there were some topics he didn’t cover. Here’s the advice I would give past me.
 
