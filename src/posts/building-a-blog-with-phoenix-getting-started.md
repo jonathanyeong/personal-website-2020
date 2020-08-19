@@ -1,15 +1,17 @@
 ---
 date: 2020-07-09
 title: "Building a blog with Phoenix: Getting started"
-layout: layouts/post.njk
 ---
 Today, I want to show you how to start building a blog using Phoenix. You can find the source code here: [https://github.com/jonathanyeong/phoenix_blog/tree/v0.0.1](https://github.com/jonathanyeong/phoenix_blog/tree/v0.0.1 "https://github.com/jonathanyeong/phoenix_blog/tree/v0.0.1"). We are using Phoenix version 1.5.3 and Elixir version 1.10.3. We will cover:
 
-* [Project setup](#project-setup)
-* [Migrations](#generate-migration)
-* [Routes](#add-routes)
-* [The Post Controller - index, new, and create](#add-the-post-controller)
-* [Post Views & Templates](#add-post-view-templates)
+- [Project Setup](#project-setup)
+- [Generate migration](#generate-migration)
+- [Add Routes](#add-routes)
+- [Add the Post Controller](#add-the-post-controller)
+  - [Breakdown](#breakdown)
+- [Add Post View & Templates](#add-post-view--templates)
+  - [Breakdown](#breakdown-1)
+- [Conclusion](#conclusion)
 
 ***
 

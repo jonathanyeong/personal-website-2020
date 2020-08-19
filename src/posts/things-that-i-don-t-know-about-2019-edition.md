@@ -1,7 +1,6 @@
 ---
 date: 2019-01-09
 title: "Things that I don't know about (2019 edition)"
-layout: layouts/post.njk
 ---
 It’s 2019 and there’s still a ton of things that I don’t know about coming out of 2018. I wanted to write these down somewhere so I can refer to it throughout the year. It’s daunting realizing how much I don’t know. But I enjoy recognizing my knowledge gaps. By working hard I can finish 2019 knowing a little bit more. Here’s a list of the things that I still don’t know about:
 

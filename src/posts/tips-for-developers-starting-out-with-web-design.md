@@ -1,7 +1,6 @@
 ---
 date: 2020-07-31
 title: "Tips for developers starting out with web design"
-layout: layouts/post.njk
 ---
 I’ve always had this dream of being the fullest, full stack developer. I would take an idea, design something awesome, and then go build it. Unfortunately, anytime I tried UI design I was a fish out of water. I’d stare at a blank screen not knowing where to begin. And in the unlikely chance I put something on the page, I was overwhelmed with choices like colour, font, and layout that I would be paralysed. Recently, I sat down and really tried to overcome these roadblocks. After many hours watching other designers, learning about colour theory, and understanding design foundations. I realised that there are some simple guidelines to develop a design that looks good enough. By no means am I an expert, it takes years to develop an eye for design. But if you’re a developer like me, and you just want to create something you’re proud of then these tips will help you.
 

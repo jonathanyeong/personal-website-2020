@@ -2,7 +2,6 @@
 date: 2020-06-14
 # hero: "/uploads/dscf0579.jpg"
 title: Black Lives Matter
-layout: layouts/post.njk
 ---
 I hope you can forgive this departure from the usual content, but at this point I can't keep silent about the racial inequality in America. My parents were first-generation immigrants, and like many others, they moved to Australia for a better life. Growing up in rural Australia we were one of a few Asian families. So you can probably guess that I spent most of my childhood surrounded by white people. Growing up this way, I started identifying as a banana, yellow on the outside white on the inside.
 

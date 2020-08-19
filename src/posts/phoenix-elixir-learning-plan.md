@@ -1,7 +1,6 @@
 ---
 date: 2020-06-26
 title: "Phoenix & Elixir Learning Plan"
-layout: layouts/post.njk
 ---
 **Updated: July 17, 2020 - Added another resource**
 
