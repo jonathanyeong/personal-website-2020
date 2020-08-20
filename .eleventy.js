@@ -100,6 +100,12 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setUseGitIgnore(false);
 
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    // Optional, default is "---"
+    excerpt_separator: "<!-- excerpt -->"
+  });
+
   return {
     templateFormats: [
       "md",
