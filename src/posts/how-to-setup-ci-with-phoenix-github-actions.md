@@ -150,11 +150,12 @@ Since we're running everything inside the docker container, the Postgres service
 
 Commit your changes and push to Github. Now go to Github and navigate to the Actions tab. Here, you will see any current or past workflow runs. Every run will have a commit, the branch the commit was on, and some other metadata.
 
-![Github Actions page](/uploads/screen-shot-2020-07-19-at-1-58-18-pm.png "Github Actions ")
+
+![Github Actions page](https://res.cloudinary.com/jonathan-yeong/image/upload/v1596067038/personal-blog/screen-shot-2020-07-19-at-1-58-18-pm_qnr5ah.png)
 
 If you wanted to manually run your workflow you will have to click into the workflow. My workflow name is `Elixir CI` so clicking into it gives me the following page. On this page, you can run your workflow by clicking the button.
 
-![See the Run Workflow button to manually run your action](/uploads/screen-shot-2020-07-19-at-1-58-38-pm.png "Elixir CI action")
+![See the Run Workflow button to manually run your action](https://res.cloudinary.com/jonathan-yeong/image/upload/v1596067038/personal-blog/screen-shot-2020-07-19-at-1-58-38-pm_jqm758.png)
 
 ## What's next
 

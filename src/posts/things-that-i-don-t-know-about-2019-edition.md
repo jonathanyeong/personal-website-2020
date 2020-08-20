@@ -16,7 +16,3 @@ It’s 2019 and there’s still a ton of things that I don’t know about coming
 * **Fancy AWS stuff** - I’ve heard people talk about Athena and Glue. But I have no idea what they are or what they achieve. The AWS ecosystem is huge, I'd want to learn more about it.
 
 This is scratching the surface of the things I don’t know about. There’s probably plenty more. But as I continue on in 2019 I want to spend time researching some of these topics. And hopefully by the end of the year I’ll know a little bit more.
-
-***
-
-_Photo by_ [_Dmitry Ratushny_](https://unsplash.com/@ratushny?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) _on_ [_Unsplash_](https://unsplash.com/search/photos/learning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

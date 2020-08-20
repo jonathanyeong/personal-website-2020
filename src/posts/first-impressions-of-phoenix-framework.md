@@ -14,7 +14,7 @@ Channels are mind-blowing. In Rails, Action Cable achieves something similar. Bo
 
 Next up is, out of the box telemetry, and a live dashboard (since version 1.5)! I love application monitoring, and I love that it comes for free! Phoenix is the first framework I've used that has all this stuff just baked in. Metrics with Phoenix are like metrics with StatsD combined with Prometheus. They're easy to use around the codebase but discoverable in that you have to declare them upfront. Also, the live dashboard looks pretty damn good (screenshot below), as well as showing all the essential metrics. With all of this out of the box, it takes out another decision when building a site. The downside is that you need to set up some extra authentication to hide your dashboard in production, but there are docs for that: [Phoenix Live Dashboard](https://hexdocs.pm/phoenix_live_dashboard/Phoenix.LiveDashboard.html#module-extra-add-dashboard-access-on-all-environments-including-production).
 
-![Phoenix Live dashboard](/uploads/live-dashboard.png "Phoenix Live dashboard")
+![Phoenix Live dashboard](https://res.cloudinary.com/jonathan-yeong/image/upload/v1596067038/personal-blog/live-dashboard_hiikn0.png)
 
 Finally, it's just been a joy building a Phoenix app. Since I have no idea what I'm doing, I get hit with a lot of errors or warnings. They've been super helpful and often offer solutions. Phoenix's hot reloading is super snappy, and the default styling looks fresh. I'm not a front-end developer, so I'm always happy when a framework ships with default styles that don't look like rubbish.
 

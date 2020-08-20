@@ -12,7 +12,7 @@ I recently wrote about my experience ([here](https://www.jonathanyeong.com/blog-
 
 I'm also working through this plan, which means I'll be continually updating it. I'll make sure to add resources I find or make edits if there's a better flow to learning a concept. Attached is a mindmap of the phases, and here's a [link to the mindmap](https://whimsical.com/6ogCtzpGVkE7PkQkUF53dh).
 
-![](/uploads/phoenix-elixir-learning-plan.png)
+![Phoenix Elixir Learning Plan](https://res.cloudinary.com/jonathan-yeong/image/upload/v1596067038/personal-blog/phoenix-elixir-learning-plan_f6dxw9.png)
 
 ## Phase 0: Get setup with Phoenix & Elixir
 

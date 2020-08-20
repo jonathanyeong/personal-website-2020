@@ -40,11 +40,11 @@ Next, I needed to fix all the links. I changed the links from `{{ .Permalink }}`
 
 Going back to Devto, I fetched the feed and voila! My dashboard was being populated from my personal site posts!
 
-![](/uploads/syndicated-posts-dashboard.png)
+![Sydicated Posts dashboard](https://res.cloudinary.com/jonathan-yeong/image/upload/v1596067038/personal-blog/syndicated-posts-dashboard_fokva3.png)
 
 I could also see that my Devto post is setting a canonical URL.
 
-![](/uploads/canonical-url.png)
+![Canonical URL](https://res.cloudinary.com/jonathan-yeong/image/upload/v1596067037/personal-blog/canonical-url_kjqkb7.png)
 
 A canonical URL is super useful because it helps optimize traffic to your website (or whatever site the canonical URL points to). When you start duplicating posts across platforms such as Devto, search engines don't know which result to show. Instead, they might divert traffic to each of these sites equally. But at the end of the day, you want where you originally published the post to get all the traffic. Canonical URLs solve this problem. They get prioritized over the other URLs, which means more visibility for the website you want traffic to!
 
