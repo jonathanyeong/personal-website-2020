@@ -1,4 +1,4 @@
-# eleventy-base-blog
+# Jono's Eleventy Blog
 
 A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
@@ -45,22 +45,8 @@ npm install
 ### 5. Run Eleventy
 
 ```
-npx eleventy
-```
-
-Or build and host locally for local development
-```
-npx eleventy --serve
-```
-
-Or build automatically when a template changes:
-```
-npx eleventy --watch
-```
-
-Or in debug mode:
-```
-DEBUG=* npx eleventy
+# This will start both eleventy and the sass compiler
+npm run start
 ```
 
 ### Implementation Notes

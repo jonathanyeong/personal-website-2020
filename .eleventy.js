@@ -62,8 +62,10 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
+  eleventyConfig.addWatchTarget("src/assets/styles/");
+
   eleventyConfig.addPassthroughCopy("src/img");
-  eleventyConfig.addPassthroughCopy("src/assets/css");
+  eleventyConfig.addPassthroughCopy("src/assets/styles");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -94,12 +96,15 @@ module.exports = function(eleventyConfig) {
     ghostMode: false
   });
 
+  eleventyConfig.setUseGitIgnore(false);
+
   return {
     templateFormats: [
       "md",
       "njk",
       "html",
-      "liquid"
+      "liquid",
+      "11ty"
     ],
 
     // If your site lives in a different subdirectory, change this.
