@@ -64,8 +64,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addWatchTarget("src/assets/styles/");
 
-  eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/assets/icons");
   eleventyConfig.addPassthroughCopy("src/assets/styles");
+  eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
