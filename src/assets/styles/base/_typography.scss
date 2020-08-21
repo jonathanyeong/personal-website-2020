@@ -1,10 +1,11 @@
+html,
+body {
+  font-family: 'AvenirLTPro-Book', system-ui, sans-serif;
+  font-size: 1.1rem;
+}
+
 p:last-child {
   margin-bottom: 0;
-}
-p,
-.tmpl-post li,
-img {
-  max-width: 37.5em; /* 600px /16 */
 }
 p,
 .tmpl-post li {
@@ -16,38 +17,6 @@ a[href] {
 a[href]:visited {
   color: var(--navy);
 }
-
-pre,
-code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-  line-height: 1.5;
-}
-pre {
-  font-size: 14px;
-  line-height: 1.375;
-  direction: ltr;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-  padding: 1em;
-  margin: .5em 0;
-  background-color: #f6f6f6;
-}
-.highlight-line {
-  display: block;
-  padding: 0.125em 1em;
-  text-decoration: none; /* override del, ins, mark defaults */
-  color: inherit; /* override del, ins, mark defaults */
-}
-
 /* allow highlighting empty lines */
 .highlight-line:empty:before {
   content: " ";
@@ -74,10 +43,8 @@ pre {
 
 /* Header */
 .home {
-  padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
+  margin: 0;
 }
 .home :link:not(:hover) {
   text-decoration: none;
@@ -85,13 +52,11 @@ pre {
 
 /* Nav */
 .nav {
-  padding: 0;
-  list-style: none;
-  float: left;
-  margin-left: 1em;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
 }
 .nav-item {
-  display: inline-block;
   margin-right: 1em;
 }
 .nav-item a[href]:not(:hover) {
@@ -107,12 +72,7 @@ pre {
   list-style: none;
   padding: 0;
 }
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  line-height: 100%;
-  text-align: right;
-}
+
 .postlist-date,
 .postlist-item:before {
   font-size: 0.8125em; /* 13px /16 */

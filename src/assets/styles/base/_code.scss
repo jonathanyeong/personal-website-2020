@@ -1,5 +1,8 @@
-code[class*="language-"], pre[class*="language-"] {
-	font-size: 14px;
+// Uses Prism Monokai Dark Styles
+code[class*="language-"],
+pre[class*="language-"],
+pre {
+	font-size: 0.9rem;
 	line-height: 1.375;
 	direction: ltr;
 	text-align: left;
@@ -16,9 +19,11 @@ code[class*="language-"], pre[class*="language-"] {
 	background: #272822;
 	color: #f8f8f2;
 }
-pre[class*="language-"] {
-	padding: 1.5em 0;
+pre[class*="language-"],
+pre  {
+	padding: 1.5em 1rem;
 	margin: .5em 0;
+	border-radius: 3px;
 	overflow: auto;
 }
 :not(pre) > code[class*="language-"] {
@@ -86,4 +91,23 @@ pre[class*="language-"] {
 pre > code.highlight {
 	outline: 0.4em solid #f92672;
 	outline-offset: .4em;
+}
+.highlight-line {
+  display: block;
+  padding: 0.125em 1em;
+  text-decoration: none; /* override del, ins, mark defaults */
+  color: inherit; /* override del, ins, mark defaults */
+}
+
+pre,
+code {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  line-height: 1.5;
+}
+
+code {
+	background-color: var(--lightgray);
+	border-radius: 3px;
+	font-size: 0.8rem;
+	padding: 0.2rem 0.5rem;
 }

@@ -2,7 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'AvenirLTPro-Book', system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
 }
@@ -15,17 +14,23 @@ main :first-child {
 }
 
 header {
+  display: flex;
   border-bottom: 1px dashed var(--lightgray);
+  max-width: var(--ten-column-width);
+  margin: 0 auto;
+  padding: 1rem;
 }
-header:after {
-  content: "";
-  display: table;
-  clear: both;
+
+.tmpl-home,
+.tmpl-post {
+  max-width: var(--ten-column-width);
+  margin: 0 auto;
 }
-table {
-  margin: 1em 0;
-}
-table td,
-table th {
-  padding-right: 1em;
+
+.tmpl-post {
+  img {
+    display: block;
+    max-width: var(--eight-column-width);
+    margin: 0 auto;
+  }
 }

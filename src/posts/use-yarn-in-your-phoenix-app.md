@@ -12,18 +12,24 @@ If you're just starting out, NPM is a great choice. But if you're used to Yarn o
 
 I installed Yarn on my Mac with Homebrew. For further installation instructions see the [Yarn docs](https://classic.yarnpkg.com/en/docs/install/#mac-stable "Yarn docs").
 
-    brew install yarn
+```bash
+$ brew install yarn
+```
 
 ## Initialize Yarn
 
 Navigate to the assets folder in your Phoenix app.
 
-    cd ~/<phoenixapp>/assets
-    yarn init
+```bash
+cd ~/<phoenixapp>/assets
+yarn init
+```
 
 After running `yarn init` you will be prompted for information on various items. The only prompt I filled out was for the entry point.
 
-    question entry point (index.js): app.js
+```bash
+question entry point (index.js): app.js
+```
 
 You can open up `package.json` and see the results of `yarn init`. Feel free to edit these at a later time.
 
@@ -31,9 +37,10 @@ You can open up `package.json` and see the results of `yarn init`. Feel free to 
 
 Run the `yarn` command to generate a `yarn.lock` file.
 
-    cd ~/<phoenixapp>/assets
-    yarn
-
+```bash
+cd ~/<phoenixapp>/assets
+yarn
+```
 I recommend removing the `package-lock.json` file since Yarn won't be using it.
 
 That's it! You should now be ready to use Yarn to manage your front-end packages.
