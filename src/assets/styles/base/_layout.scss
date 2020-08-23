@@ -17,9 +17,18 @@ header {
   display: flex;
   max-width: var(--ten-column-width);
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+
+.hero-inner {
+  max-width: var(--ten-column-width);
+  margin: 0 auto;
+  width: 100%;
+  color: var(--primary-color);
+  padding: 2rem;
 }
 
 .tmpl-home,
@@ -39,6 +48,7 @@ header {
 
 .hero {
   background: var(--secondary-color);
+  padding-bottom: 2rem;
 }
 
 .logo  {
