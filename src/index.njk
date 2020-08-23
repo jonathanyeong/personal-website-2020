@@ -5,6 +5,8 @@ eleventyNavigation:
   order: 1
 ---
 
-{% set postslist = collections.posts %}
+{% set postslist = collections.posts | head(-7) %}
+{% set postslistCounter = collections.posts | length %}
 <h1>Recent Posts</h1>
 {% include "postslist.njk" %}
+<a href="{{ '/posts/' | url }}">See More</a>
