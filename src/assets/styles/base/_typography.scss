@@ -41,15 +41,6 @@ a[href]:visited {
   background-color: #902f2f;
 }
 
-/* Header */
-.home {
-  font-size: 1em; /* 16px /16 */
-  margin: 0;
-}
-.home :link:not(:hover) {
-  text-decoration: none;
-}
-
 /* Nav */
 .nav {
   display: flex;
