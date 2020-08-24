@@ -15,7 +15,7 @@ a[href] {
   color: var(--blue);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--darkgray);
 }
 /* allow highlighting empty lines */
 .highlight-line:empty:before {
@@ -132,10 +132,28 @@ a[href].direct-link:focus:visited,
 
 .hero-inner {
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: AvenirLTPro-Heavy;
   }
+
   p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+}
+
+.hero-inner__social-icons {
+  a {
+    fill: var(--primary-color);
+    text-decoration: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  svg {
+    width: 25px;
+    height: 25px;
   }
 }

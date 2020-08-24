@@ -48,7 +48,13 @@ header {
 
 .hero {
   background: var(--secondary-color);
-  padding-bottom: 2rem;
+  height: 80vh;
+  margin-bottom: 2rem;
+}
+
+.hero-inner__social-icons {
+  display: flex;
+  align-items: center;
 }
 
 .logo  {
