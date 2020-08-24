@@ -1,8 +1,16 @@
 ---
-layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+
+{% extends 'layouts/base.njk' %}
+
+{% block header %}
+<div class="hero-inner">
+  <h1 class="u-mt4 u-mb4">{{ title }}</h1>
+</div>
+{% endblock %}
+
+{% block content %}
 
 {{ content | safe }}
 
@@ -13,3 +21,4 @@ templateClass: tmpl-post
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul>
+{% endblock %}
