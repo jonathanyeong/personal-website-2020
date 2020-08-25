@@ -13,16 +13,6 @@ main :first-child {
   margin-top: 0;
 }
 
-header {
-  display: flex;
-  max-width: var(--ten-column-width);
-  margin: 0 auto;
-  padding: 0 1rem;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 .hero-inner {
   max-width: var(--ten-column-width);
   margin: 0 auto;
@@ -53,14 +43,6 @@ header {
     h1 {
       font-size: 3.5rem;
     }
-  }
-
-  header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%);
   }
 }
 

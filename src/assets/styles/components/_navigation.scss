@@ -1,0 +1,9 @@
+.nav-container {
+  display: flex;
+  max-width: var(--ten-column-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

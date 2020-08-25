@@ -12,3 +12,8 @@
 @import "base/typography";
 @import "base/code";
 @import "base/utilities";
+//--------------------
+// COMPONENTS
+// partials with local scope to a component
+//--------------------
+@import "components/navigation";
