@@ -65,15 +65,3 @@ main :first-child {
   display: flex;
   align-items: center;
 }
-
-.logo  {
-  display: flex;
-  transition: opacity 0.2s ease-in-out;
-
-  &:hover {
-    opacity: 0.7;
-  }
-  svg {
-    width: 3.2rem;
-  }
-}

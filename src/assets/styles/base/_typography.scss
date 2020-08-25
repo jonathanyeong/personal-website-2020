@@ -11,12 +11,6 @@ p,
 .tmpl-post li {
   line-height: 1.45;
 }
-a[href] {
-  color: var(--blue);
-}
-a[href]:visited {
-  color: var(--darkgray);
-}
 /* allow highlighting empty lines */
 .highlight-line:empty:before {
   content: " ";
@@ -39,23 +33,6 @@ a[href]:visited {
 }
 .highlight-line-remove {
   background-color: #902f2f;
-}
-
-/* Nav */
-.nav {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-}
-.nav-item {
-  margin-right: 1em;
-}
-.nav-item a[href]:not(:hover) {
-  text-decoration: none;
-}
-.nav-item-active {
-  font-weight: 700;
-  text-decoration: underline;
 }
 
 /* Posts list */
@@ -118,16 +95,6 @@ a[href].post-tag:visited {
   text-decoration: none;
   font-style: normal;
   margin-left: .1em;
-}
-a[href].direct-link,
-a[href].direct-link:visited {
-  color: transparent;
-}
-a[href].direct-link:focus,
-a[href].direct-link:focus:visited,
-:hover > a[href].direct-link,
-:hover > a[href].direct-link:visited {
-  color: #aaa;
 }
 
 .hero-inner {
