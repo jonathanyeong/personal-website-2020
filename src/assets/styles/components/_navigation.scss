@@ -1,13 +1,16 @@
 .nav-container {
-  background: var(--secondary-color);
-  display: flex;
-  max-width: var(--ten-column-width);
-  margin: 0 auto;
-  // padding: 0 1rem;
-  padding-top: 0.3rem;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
+  background: var(--secondary-color);
+
+  nav {
+    display: flex;
+    max-width: var(--ten-column-width);
+    margin: 0 auto;
+    padding-top: 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .nav-container__logo {
@@ -46,4 +49,12 @@
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    nav {
+      padding: 0 1rem;
+    }
+  }
 }
