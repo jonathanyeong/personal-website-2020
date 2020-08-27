@@ -49,8 +49,8 @@ main :first-child {
 
 .hero {
   background: var(--secondary-color);
-  height: 60vh;
-  margin-bottom: 2rem;
+  height: 100vh;
+  // margin-bottom: 2rem;
 
   &.tmpl-post {
     max-width: 100%;
@@ -65,4 +65,9 @@ main :first-child {
 .hero-inner__social-icons {
   display: flex;
   align-items: center;
+}
+
+.post-row,
+.podcast-row {
+  display: flex;
 }

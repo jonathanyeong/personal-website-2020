@@ -1,9 +1,10 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
-  key: Articles
+  key: Writing
   order: 2
 templateClass: tmpl-post-list
 ---
+{% set showYear = false %}
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
