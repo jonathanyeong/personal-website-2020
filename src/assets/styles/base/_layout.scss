@@ -22,7 +22,8 @@ main :first-child {
 }
 
 .tmpl-home,
-.tmpl-post {
+.tmpl-post,
+.tmpl-post-list {
   max-width: var(--ten-column-width);
   margin: 0 auto;
 }
@@ -48,7 +49,7 @@ main :first-child {
 
 .hero {
   background: var(--secondary-color);
-  height: 80vh;
+  height: 60vh;
   margin-bottom: 2rem;
 
   &.tmpl-post {
