@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   padding: 0;
@@ -11,14 +15,6 @@ main {
 }
 main :first-child {
   margin-top: 0;
-}
-
-.hero-inner {
-  max-width: var(--ten-column-width);
-  margin: 0 auto;
-  width: 100%;
-  color: var(--primary-color);
-  padding: 2rem;
 }
 
 .tmpl-home,
@@ -47,27 +43,7 @@ main :first-child {
   }
 }
 
-.hero {
-  background: var(--secondary-color);
-  height: 100vh;
-  // margin-bottom: 2rem;
-
-  &.tmpl-post {
-    max-width: 100%;
-    height: 60vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 .hero-inner__social-icons {
   display: flex;
   align-items: center;
-}
-
-.post-row,
-.podcast-row {
-  display: flex;
 }
