@@ -8,19 +8,39 @@
 
 .postlist-item {
   background: var(--white);
-  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25),
-              0px 0px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+              0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+              0px 1px 3px 0px rgba(0,0,0,.12);
   border-radius: 3px;
   padding: 1rem 1.6rem;
+  display: block;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: transform .2s ease-in-out;
 
-  a {
-    color: var(--primary-color);
-    font-family: 'AvenirLTPro-Medium', system-ui, sans-serif;
-    font-size: 1.2rem;
-    text-decoration: none;
+  &:hover {
+    transform: scale(1.02);
   }
+}
 
-  span {
-    display: block;
-  }
+.postlist-date {
+  color: var(--gray);
+  margin-bottom: 0.3rem;
+}
+
+.postlist-item__excerpt,
+.postlist-date,
+.postlist-item__title {
+  display: block;
+}
+
+.postlist-item__title {
+  font-family: 'AvenirLTPro-Medium', system-ui, sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.postlist-read-more {
+  font-family: 'AvenirLTPro-Heavy', system-ui, sans-serif;
+  font-size: 0.9rem;
 }

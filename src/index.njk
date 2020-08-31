@@ -6,6 +6,6 @@ templateClass: tmpl-post-list
 {% set postslist = collections.posts | head(-7) %}
 {% set postslistCounter = collections.posts | length %}
 
-<h1 class="u-mb1">Recent Articles</h1>
+<h1 class="u-mb1 u-mt2">Recent Articles</h1>
 {% include "postslist.njk" %}
 <a href="{{ '/posts/' | url }}">See More</a>

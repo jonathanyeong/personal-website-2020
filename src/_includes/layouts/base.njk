@@ -14,7 +14,7 @@
   <body>
     <div class="nav-container">
       <nav>
-        <a href="{{ '/' | url }}" class="nav-container__logo">{% include '../../assets/images/logo.svg' %}</a>
+        <a href="{{ '/' | url }}" class="nav-container__logo">{% include '../../assets/icons/logo.svg' %}</a>
         <ul class="nav">
         {%- for entry in collections.all | eleventyNavigation %}
           <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
@@ -34,7 +34,8 @@
           <p class="hero-inner__social-icons">
             <a href="mailto:hello@jonathanyeong.com" class="u-mr1">{% include '../../assets/icons/envelope.svg' %}</a>
             <a href="https://github.com/jonathanyeong" class="u-mr1">{% include '../../assets/icons/github.svg' %}</a>
-            <a href="https://www.instagram.com/jonathan.yeong/" class="u-mr1">{% include '../../assets/icons/instagram.svg' %}</a>
+            <a href="https://www.instagram.com/j
+            onathan.yeong/" class="u-mr1">{% include '../../assets/icons/instagram.svg' %}</a>
             <a href="https://www.linkedin.com/in/jonathan-yeong" class="u-mr1">{% include '../../assets/icons/linkedin.svg' %}</a>
             <a href="https://twitter.com/JonoYeong">{% include '../../assets/icons/twitter.svg' %}</a>
           </p>
