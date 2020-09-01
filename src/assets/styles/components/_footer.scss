@@ -1,0 +1,47 @@
+.footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  max-width: var(--ten-column-width);
+  margin: 0 auto;
+}
+
+.footer__social-shares {
+  margin-left: 2.5rem;
+}
+
+.footer__social-share-icons {
+  display: flex;
+
+  a {
+    text-decoration: none;
+    padding: 0 0.3rem;
+    margin: 0 0.3rem;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0.6;
+
+    }
+  }
+
+  svg {
+    fill: var(--primary-color);
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.footer__mailchimp {
+  margin-right: 2.5rem;
+}

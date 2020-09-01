@@ -1,5 +1,4 @@
 html {
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,9 +11,6 @@ body {
   background-color: var(--lightgray);
 }
 
-main {
-  padding: 1rem;
-}
 main :first-child {
   margin-top: 0;
 }
@@ -43,6 +39,10 @@ main :first-child {
       font-size: 3.5rem;
     }
   }
+}
+
+.tmpl-post-list {
+  padding: 2rem 0 4rem 0;
 }
 
 .hero-inner__social-icons {
