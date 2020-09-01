@@ -123,3 +123,16 @@ a[href].post-tag:visited {
     height: 25px;
   }
 }
+
+.see-more__item {
+  text-decoration: none;
+  color: var(--darkgray);
+  font-family: AvenirLTPro-Heavy;
+  font-size: 1.1rem;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

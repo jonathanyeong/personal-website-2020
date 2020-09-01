@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -46,4 +48,9 @@ main :first-child {
 .hero-inner__social-icons {
   display: flex;
   align-items: center;
+}
+
+.see-more__container {
+  display: flex;
+  justify-content: flex-end;
 }
