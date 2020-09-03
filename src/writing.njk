@@ -1,10 +1,23 @@
 ---
-layout: layouts/home.njk
+title: "All Posts"
 eleventyNavigation:
   key: Writing
   order: 2
 templateClass: tmpl-post-list
 ---
+
+{% extends 'layouts/base.njk' %}
+
+{% block header %}
+<div class="tmpl-post hero">
+  <div class="hero-inner">
+    <h1 class="u-mt4 u-mb4">{{ title }}</h1>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
 {% set showYear = false %}
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
+{% endblock %}
