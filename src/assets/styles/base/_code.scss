@@ -3,7 +3,7 @@ code[class*="language-"],
 pre[class*="language-"],
 pre {
 	font-size: 0.9rem;
-	line-height: 1.375;
+	line-height: 1.5;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -106,8 +106,9 @@ code {
 }
 
 code {
-	background-color: var(--lightgray);
+	background-color: var(--gray);
 	border-radius: 3px;
+	color: var(--primary-font-color);
 	font-size: 0.8rem;
 	padding: 0.2rem 0.5rem;
 }
