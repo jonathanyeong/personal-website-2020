@@ -32,15 +32,30 @@
             I write about my developer journey, and any interesting technology I'm using.
           </p>
           <p class="hero-inner__social-icons">
-            <a href="mailto:hello@jonathanyeong.com" class="u-mr1">{% include '../../assets/icons/envelope.svg' %}</a>
-            <a href="https://github.com/jonathanyeong" class="u-mr1">{% include '../../assets/icons/github.svg' %}</a>
-            <a href="https://www.instagram.com/j
-            onathan.yeong/" class="u-mr1">{% include '../../assets/icons/instagram.svg' %}</a>
-            <a href="https://www.linkedin.com/in/jonathan-yeong" class="u-mr1">{% include '../../assets/icons/linkedin.svg' %}</a>
-            <a href="https://twitter.com/JonoYeong">{% include '../../assets/icons/twitter.svg' %}</a>
+            <a href="mailto:hello@jonathanyeong.com" class="u-mr1">
+              <span class="visually-hidden">Email</span>
+              {% include '../../assets/icons/envelope.svg' %}
+            </a>
+            <a href="https://github.com/jonathanyeong" class="u-mr1">
+              <span class="visually-hidden">Github</span>
+              {% include '../../assets/icons/github.svg' %}
+            </a>
+            <a href="https://www.instagram.com/jonathan.yeong/" class="u-mr1">
+              <span class="visually-hidden">Instagram</span>
+              {% include '../../assets/icons/instagram.svg' %}
+            </a>
+            <a href="https://www.linkedin.com/in/jonathan-yeong" class="u-mr1">
+              <span class="visually-hidden">Linkedin</span>
+              {% include '../../assets/icons/linkedin.svg' %}
+            </a>
+            <a href="https://twitter.com/JonoYeong">
+              <span class="visually-hidden">Twitter</span>
+              {% include '../../assets/icons/twitter.svg' %}
+            </a>
           </p>
         </div>
         <a href="#recentArticles" class="hero-circle">
+          <span class="visually-hidden">Jump to Recent Articles</span>
           {% include '../../assets/icons/arrow.svg' %}
         </a>
       </div>
@@ -59,9 +74,18 @@
         </div>
         <div class="footer__social-shares">
           <div class="footer__social-share-icons">
-            <a href="{{ metadata.feed.path | url }} ">{% include '../../assets/icons/rss-feed.svg' %}</a>
-            <a href="mailto:hello@jonathanyeong.com">{% include '../../assets/icons/envelope.svg' %}</a>
-            <a href="https://twitter.com/JonoYeong">{% include '../../assets/icons/twitter.svg' %}</a>
+            <a href="{{ metadata.feed.path | url }} ">
+              <span class="visually-hidden">RSS Feed</span>
+              {% include '../../assets/icons/rss-feed.svg' %}
+            </a>
+            <a href="mailto:hello@jonathanyeong.com">
+              <span class="visually-hidden">Email</span>
+              {% include '../../assets/icons/envelope.svg' %}
+            </a>
+            <a href="https://twitter.com/JonoYeong">
+              <span class="visually-hidden">Twitter</span>
+              {% include '../../assets/icons/twitter.svg' %}
+            </a>
           </div>
         </div>
       </div>
