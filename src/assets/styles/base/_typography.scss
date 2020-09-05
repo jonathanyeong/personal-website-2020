@@ -98,12 +98,22 @@ a[href].post-tag:visited {
 
 .hero-inner {
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-family: AvenirLTPro-Heavy;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.4rem;
+  }
+
+  @media (min-width: $small) {
+    h1 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
   }
 }
 

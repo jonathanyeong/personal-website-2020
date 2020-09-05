@@ -13,14 +13,24 @@
   text-align: left;
   max-width: var(--ten-column-width);
   margin: 0 auto;
+  padding: 0 1rem;
+  flex-direction: column;
+
+  @media (min-width: $small) {
+    flex-direction: row;
+    padding: 0;
+  }
 }
 
 .footer__social-shares {
-  margin-left: 2.5rem;
+  @media (min-width: $small) {
+    margin-left: 2.5rem;
+  }
 }
 
 .footer__social-share-icons {
   display: flex;
+  justify-content: center;
 
   a {
     text-decoration: none;
@@ -40,8 +50,14 @@
     width: 23px;
     height: 23px;
   }
+
+  @media (min-width: $small) {
+    justify-content: flex-start;
+  }
 }
 
 .footer__mailchimp {
-  margin-right: 2.5rem;
+   @media (min-width: $small) {
+    margin-right: 2.5rem;
+  }
 }

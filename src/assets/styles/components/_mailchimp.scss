@@ -1,10 +1,15 @@
 .mailchimp__form {
   max-width: 26rem;
   width: 100%;
+  padding-bottom: 1rem;
 
   h1 {
     margin-top: 0;
     font-size: 1.75rem;
+  }
+
+  @media (min-width: $small) {
+    padding: 0;
   }
 }
 
@@ -15,7 +20,11 @@
   height: 2rem;
   padding: 0.5rem;
   flex-grow: 2;
-  margin-right: 6px;
+  margin: 0 0 5px 0;
+
+  @media (min-width: $small) {
+    margin: 0 6px 0 0;
+  }
 }
 
 .mailchimp__input {
@@ -23,4 +32,8 @@
   border: 0;
   padding: 0;
   margin: 0;
+  flex-direction: column;
+  @media (min-width: $small) {
+    flex-direction: row;
+  }
 }

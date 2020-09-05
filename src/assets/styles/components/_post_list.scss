@@ -2,7 +2,11 @@
   h1 {
     font-family: 'AvenirLTPro-Medium', system-ui, sans-serif;
     color: var(--primary-color);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+
+    @media (min-width: $small) {
+      letter-spacing: 2px;
+    }
   }
 }
 
@@ -12,7 +16,7 @@
               0px 1px 1px 0px rgba(0, 0, 0, 0.14),
               0px 1px 3px 0px rgba(0,0,0,.12);
   border-radius: 3px;
-  padding: 1rem 1.6rem;
+  padding: 1rem 1rem;
   display: block;
   color: var(--primary-color);
   text-decoration: none;
@@ -20,6 +24,11 @@
 
   &:hover {
     transform: scale(1.02);
+  }
+
+  @media (min-width: $small) {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
 }
 
@@ -32,6 +41,7 @@
 .postlist-date,
 .postlist-item__title {
   display: block;
+  word-wrap: break-word;
 }
 
 .postlist-item__title {
