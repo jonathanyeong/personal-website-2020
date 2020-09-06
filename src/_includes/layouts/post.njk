@@ -3,6 +3,15 @@ templateClass: tmpl-post
 ---
 {% extends 'layouts/base.njk' %}
 
+{% block ogtags %}
+<meta property="og:title" content="{{ title }}"/>
+<meta property="og:url" content={{ page.url | url | absoluteUrl(metadata.url) }} />
+{% if description %}
+  <meta property="og:description" content="{{ description }}" />
+{% endif %}
+<meta property="og:type" content="article" />
+{% endblock %}
+
 {% block header %}
 <div class="tmpl-post hero">
   <div class="hero-inner">

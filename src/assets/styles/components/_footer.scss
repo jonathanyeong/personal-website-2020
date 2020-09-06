@@ -16,14 +16,14 @@
   padding: 0 1rem;
   flex-direction: column;
 
-  @media (min-width: $small) {
+  @media (min-width: $md) {
     flex-direction: row;
     padding: 0;
   }
 }
 
 .footer__social-shares {
-  @media (min-width: $small) {
+  @media (min-width: $md) {
     margin-left: 2.5rem;
   }
 }
@@ -51,13 +51,13 @@
     height: 23px;
   }
 
-  @media (min-width: $small) {
+  @media (min-width: $md) {
     justify-content: flex-start;
   }
 }
 
 .footer__mailchimp {
-   @media (min-width: $small) {
+   @media (min-width: $md) {
     margin-right: 2.5rem;
   }
 }

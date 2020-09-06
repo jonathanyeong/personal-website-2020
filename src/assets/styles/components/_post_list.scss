@@ -4,7 +4,7 @@
     color: var(--primary-color);
     letter-spacing: 1px;
 
-    @media (min-width: $small) {
+    @media (min-width: $md) {
       letter-spacing: 2px;
     }
   }
@@ -26,7 +26,7 @@
     transform: scale(1.02);
   }
 
-  @media (min-width: $small) {
+  @media (min-width: $md) {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
   }

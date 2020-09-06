@@ -37,7 +37,7 @@ main :first-child {
 
     h1 {
       font-size: 2.5rem;
-      @media (min-width: $small) {
+      @media (min-width: $md) {
         font-size: 3.5rem;
       }
     }
@@ -47,14 +47,14 @@ main :first-child {
 .tmpl-post-list {
   padding: 1rem 1rem 4rem 1rem;
 
-  @media (min-width: $small) {
+  @media (min-width: $md) {
     padding: 2rem 0 4rem 0;
   }
 }
 
 .tmpl-post {
   padding: 1rem;
-  @media (min-width: $small) {
+  @media (min-width: $md) {
     padding: 0;
   }
 }

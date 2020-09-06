@@ -12,8 +12,7 @@
     align-items: center;
     width: auto;
 
-    @media (min-width: $small) {
-      width: 100%;
+    @media (min-width: $md) {
       padding-top: 0.3rem;
     }
   }
