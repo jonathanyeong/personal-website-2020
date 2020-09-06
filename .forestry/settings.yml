@@ -1,11 +1,12 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
-sections: 
-upload_dir: uploads
-public_path: "/uploads"
+admin_path:
+webhook_url:
+sections:
+upload_dir: personal-blog
+public_path: https://res.cloudinary.com/jonathan-yeong/image/upload
+front_matter_path: https://res.cloudinary.com/jonathan-yeong/image/upload
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
