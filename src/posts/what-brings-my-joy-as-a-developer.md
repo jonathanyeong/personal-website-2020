@@ -2,6 +2,7 @@
 date: 2020-08-06
 title: "What brings me joy as a developer"
 description: "A list of things that bring me joy as a developer"
+published: true
 ---
 I've been thinking about joy lately. Which seems like a sad sentence to write. But I promise it's not that bad! It's more of a yearning for something new. I have all these questions in my head like, am I in the right career? Should I move back to Australia? Am I even a good programmer? Am I having an early-to-mid life crisis? Maybe it's time to invest all my savings into bitcoin?
 

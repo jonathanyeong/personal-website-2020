@@ -1,6 +1,7 @@
 ---
 date: 2020-08-28
 title: "Excerpts with Eleventy"
+published: true
 ---
 I 100% struggled with getting excerpts in [Eleventy](https://www.11ty.dev/) (11ty). It seems so simple, but I couldn’t figure it out.
 

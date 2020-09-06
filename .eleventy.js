@@ -64,6 +64,13 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
+  const now = new Date();
+  const livePosts = p => p.date <= now && p.data.published;
+
+  eleventyConfig.addCollection('posts', collection => {
+    return collection.getFilteredByGlob('./src/posts/*.md')
+      .filter(livePosts);
+  });
   eleventyConfig.addWatchTarget("src/assets/styles/");
 
   eleventyConfig.addPassthroughCopy("src/assets/images");
