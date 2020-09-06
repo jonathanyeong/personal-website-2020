@@ -3,3 +3,5 @@ node_modules/
 package-lock.json
 main.css
 main.css.map
+main.min.css
+main.min.css.map
