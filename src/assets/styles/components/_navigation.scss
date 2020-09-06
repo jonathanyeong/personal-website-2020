@@ -2,6 +2,7 @@
   width: 100%;
   background: var(--secondary-color);
   position: absolute;
+  z-index: var(--top-layer);
 
   nav {
     display: flex;

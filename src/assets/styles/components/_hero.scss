@@ -5,6 +5,7 @@
   justify-content: center;
   height: 100vh;
   padding: 1rem;
+  position: relative;
 
   &.tmpl-post {
     max-width: 100%;
@@ -35,7 +36,7 @@
   align-self: center;
   cursor: pointer;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   border: 1px solid #82C0CC;
   border-radius: 50%;
   width: 40px;
