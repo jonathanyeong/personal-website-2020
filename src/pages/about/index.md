@@ -11,4 +11,5 @@ Senior software engineer currently based in Seattle, WA, originally from Sydney,
 
 ## Talks
 
+* Deep dive into Elixir | ElixirConf 2020 - [**slides**](https://speakerdeck.com/jonoyeong/deep-dive-into-elixir)
 * Things I need to know about security - [**slides**](https://speakerdeck.com/jonoyeong/things-i-need-to-know-about-security)
