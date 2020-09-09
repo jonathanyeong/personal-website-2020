@@ -78,6 +78,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/styles");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
 
+  eleventyConfig.addPassthroughCopy("src/_redirects");
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,
