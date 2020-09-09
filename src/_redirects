@@ -1,1 +1,1 @@
-/blog-posts/* /posts/* 302
+/blog-posts/:id /posts/:id 302
