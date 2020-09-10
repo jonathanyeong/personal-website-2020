@@ -3,7 +3,7 @@ date: 2020-09-09T11:18:34.000-07:00
 title: '2020 blog refresh: the process and lessons learnt'
 description: The process and the lessons learnt after doing a redesign of my blog.
   During this redesign I also migrated from Hugo to 11ty.
-published: false
+published: true
 
 ---
 Welcome to my brand new website! I'm stoked that I can finally share it with people. I rushed a little towards the end to get it released. But I'm happy with how it all turned out. Along with a new design, I'm also using a new static site generator. I migrated from [Hugo](https://gohugo.io/) to [Eleventy](https://www.11ty.dev/) (11ty). The project was about two months in the making from design to production. I learnt a few lessons along the way. Let's dive into the details, and the lessons learnt.
@@ -12,7 +12,7 @@ Welcome to my brand new website! I'm stoked that I can finally share it with peo
 
 I was reaching the limits of my theme, [Brevifolia](https://github.com/kendallstrautman/brevifolia-hugo-forestry). Don't get me wrong it served me well over the past year. It was easy to make small customisations with it. But I wanted a more flexible design. I wanted something that could be more than a blogging theme. I ended up using [Figma](https://www.figma.com/) to build the design. I'm no designer, and Figma is still a new tool for me. So the design process took much longer than I thought it would. I wrote up some tips and resources in a post, [starting out with web design](https://www.jonathanyeong.com/posts/tips-for-developers-starting-out-with-web-design/). Below, you can see the evolution of the design.
 
-![](https://res.cloudinary.com/jonathan-yeong/image/upload/v1599762915/personal-blog/Frame_1-min_rcg8px.jpg)
+![Blog design evolution](https://res.cloudinary.com/jonathan-yeong/image/upload/v1599763098/personal-blog/blog_design_evolution.jpg)
 
 ## Setup and Migration
 
