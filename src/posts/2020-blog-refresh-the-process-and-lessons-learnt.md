@@ -12,7 +12,7 @@ Welcome to my brand new website! I'm stoked that I can finally share it with peo
 
 I was reaching the limits of my theme, [Brevifolia](https://github.com/kendallstrautman/brevifolia-hugo-forestry). Don't get me wrong it served me well over the past year. It was easy to make small customisations with it. But I wanted a more flexible design. I wanted something that could be more than a blogging theme. I ended up using [Figma](https://www.figma.com/) to build the design. I'm no designer, and Figma is still a new tool for me. So the design process took much longer than I thought it would. I wrote up some tips and resources in a post, [starting out with web design](https://www.jonathanyeong.com/posts/tips-for-developers-starting-out-with-web-design/). Below, you can see the evolution of the design.
 
-\[Images here\]
+![](https://res.cloudinary.com/jonathan-yeong/image/upload/frame-1-min.jpg)
 
 ## Setup and Migration
 
@@ -38,7 +38,7 @@ date: 2020-07-09
 title: "Building a blog with Phoenix: Getting started"
 published: true
 ---
- ```
+```
 
 Now that I could see all my posts in 11ty, I wanted two more features:
 
