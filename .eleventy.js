@@ -142,26 +142,6 @@ module.exports = function(eleventyConfig) {
   };
 };
 
-function stripTagsFromExcerpt(excerpt, options) {
-  excerpt = stripTags(excerpt);
-  excerpt = excerpt.replace(/^\s+|\s+$|\s+(?=\s)/g, "");
-  var pruneLength =
-    typeof options.pruneLength === "number" ? options.pruneLength : 140;
-  if (pruneLength > 0) {
-    excerpt = truncate(excerpt, {
-      length: pruneLength,
-      omission:
-        typeof options.pruneString === "string" ? options.pruneString : "…",
-      separator:
-        typeof options.pruneSeparator === "string"
-          ? options.pruneSeparator
-          : " ",
-    });
-  }
-  return excerpt;
-}
-
-
 function extractExcerpt(article) {
   if (!article.hasOwnProperty("templateContent")) {
     console.warn(

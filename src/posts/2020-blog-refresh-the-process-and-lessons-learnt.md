@@ -1,9 +1,9 @@
 ---
-date: 2020-09-10T11:18:34-07:00
+date: 2020-09-09T11:18:34-07:00
 title: '2020 blog refresh: the process and lessons learnt'
 description: The process and the lessons learnt after doing a redesign of my blog.
   During this redesign I also migrated from Hugo to 11ty.
-published: false
+published: true
 
 ---
 Welcome to my brand new website! I'm stoked that I can finally share it with people. I rushed a little towards the end to get it released. But I'm happy with how it all turned out. Along with a new design, I'm also using a new static site generator. I migrated from [Hugo](https://gohugo.io/) to [Eleventy](https://www.11ty.dev/) (11ty). The project was about two months in the making from design to production. I learnt a few lessons along the way. Let's dive into the details, and the lessons learnt.
@@ -26,19 +26,18 @@ The first step was to get my local project setup with 11ty. To do this, I follow
 Next, I copied posts from my Hugo project to 11ty. The only thing I changed was the frontmatter. I moved from toml to yaml (see below). 11ty also lets you [customise your frontmatter](https://www.11ty.dev/docs/data-frontmatter-customize/) format. This customisation would be useful if you're migrating heaps of posts.
 
 ```yaml
-    # toml
-    +++
-    date = 2020-07-09
-    title = "Building a blog with Phoenix: Getting started"
-    +++
+# toml
++++
+date = 2020-07-09
+title = "Building a blog with Phoenix: Getting started"
++++
 
-    # yaml
-    ---
-    date: 2020-07-09
-    title: "Building a blog with Phoenix: Getting started"
-    published: true
-    ---
-
+# yaml
+---
+date: 2020-07-09
+title: "Building a blog with Phoenix: Getting started"
+published: true
+---
  ```
 
 Now that I could see all my posts in 11ty, I wanted two more features:
@@ -46,15 +45,15 @@ Now that I could see all my posts in 11ty, I wanted two more features:
 * **Excerpts** - Implementing excerpts gave me a little bit of trouble. Hugo had excerpt support out of the box. With 11th, I had to do something a little more custom. Here's a post I wrote about how [I implemented excerpts](https://www.jonathanyeong.com/posts/excerpts-with-eleventy/).
 * **Draft Posts** - This [blog post](https://remysharp.com/2019/06/26/scheduled-and-draft-11ty-posts) by Remy Sharp showed me how to implement draft posts. I added the snippet below to my `.eleventy.js` file. This snippet filters posts if the post date is in the future, and if `published` is set to false.
 
-```javascript
-    const now = new Date();
-    const livePosts = p => p.date <= now && p.data.published;
-    
-    eleventyConfig.addCollection('posts', collection => {
-      return collection.getFilteredByGlob('./src/posts/*.md')
-        .filter(livePosts);
-    });
- 
+```js
+
+const now = new Date();
+const livePosts = p => p.date <= now && p.data.published;
+
+eleventyConfig.addCollection('posts', collection => {
+    return collection.getFilteredByGlob('./src/posts/*.md')
+    .filter(livePosts);
+});
 ```
 
 That's it for the migration and setup! I spent the rest of the time building the theme. Onto the lessons learnt.
@@ -66,30 +65,32 @@ That's it for the migration and setup! I spent the rest of the time building the
 Blocks let you define a shell and then override or fill in portions based on your template. I could do things like inject `ogtags` into the `<head>` if I was on a blog post. Unfortunately, I was bumping into an issue where my blocks weren't showing up. And I found out that you can't mix 11ty layout chaining with Nunjucks block inheritance - [this is by design](https://github.com/11ty/eleventy/issues/834#issuecomment-569474008). Fortunately, we can get around this problem. For example, if we wanted to add `ogtags` as a block, you would declare it in the base template.
 
 ```html
-    <html>
-    	<head>
-        {% block ogtags %}
-        {% endblock %}
-    	</head>
-    </html>
-
+{% raw %}
+<html>
+    <head>
+    {% block ogtags %}
+    {% endblock %}
+    </head>
+</html>
+{% endraw %}
 ```
 
 Now in your post template, remove `layout: layouts/base.njk` from the frontmatter. Instead, use Nunjucks `extends` (**note**: you can still have other frontmatter data). And that's it! The `meta` tags will now appear in your `<head>` if you're on a post page.
 
 ```html
-    ---
-    templateClass: tmpl-post
-    ---
-    {% extends 'layouts/base.njk' %}
-    
-    {% block ogtags %}
-    <meta property="og:title" content="{{ title }}"/>
-    <meta property="og:url" content={{ page.url | url | absoluteUrl(metadata.url) }} />
-    <meta property="og:description" content="{{ description }}" />
-    <meta property="og:type" content="article" />
-    {% endblock %}
+{% raw %}
+---
+templateClass: tmpl-post
+---
+{% extends 'layouts/base.njk' %}
 
+{% block ogtags %}
+<meta property="og:title" content="{{ title }}"/>
+<meta property="og:url" content={{ page.url | url | absoluteUrl(metadata.url) }} />
+<meta property="og:description" content="{{ description }}" />
+<meta property="og:type" content="article" />
+{% endblock %}
+{% endraw %}
 ```
 
 ### Take the time to design
@@ -104,12 +105,12 @@ I screwed the pooch on this one. When I flipped the switch in production, I did 
 * Add a passthrough copy in `.eleventy.js`. The passthrough copy will copy your `_redirects` file to the publish directory (`/dist` for me).
 
 ```bash
-    # src/_redirects
-    /blog-posts/:id /posts/:id 302
-    
-    # .eleventy.js
-    eleventyConfig.addPassthroughCopy("src/_redirects");
-```    
+# src/_redirects
+/blog-posts/:id /posts/:id 302
+
+# .eleventy.js
+eleventyConfig.addPassthroughCopy("src/_redirects");
+```
 
 ***
 

@@ -7,7 +7,6 @@ fields:
   label: date
   config:
     date_format: YYYY-MM-DD
-  default: now
 - type: text
   name: title
   label: title
