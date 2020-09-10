@@ -46,6 +46,7 @@ Now that I could see all my posts in 11ty, I wanted two more features:
 * **Excerpts** - Implementing excerpts gave me a little bit of trouble. Hugo had excerpt support out of the box. With 11th, I had to do something a little more custom. Here's a post I wrote about how [I implemented excerpts](https://www.jonathanyeong.com/posts/excerpts-with-eleventy/).
 * **Draft Posts** - This [blog post](https://remysharp.com/2019/06/26/scheduled-and-draft-11ty-posts) by Remy Sharp showed me how to implement draft posts. I added the snippet below to my `.eleventy.js` file. This snippet filters posts if the post date is in the future, and if `published` is set to false.
 
+```javascript
     const now = new Date();
     const livePosts = p => p.date <= now && p.data.published;
     
@@ -53,7 +54,8 @@ Now that I could see all my posts in 11ty, I wanted two more features:
       return collection.getFilteredByGlob('./src/posts/*.md')
         .filter(livePosts);
     });
-    
+ 
+```
 
 That's it for the migration and setup! I spent the rest of the time building the theme. Onto the lessons learnt.
 
@@ -63,16 +65,19 @@ That's it for the migration and setup! I spent the rest of the time building the
 
 Blocks let you define a shell and then override or fill in portions based on your template. I could do things like inject `ogtags` into the `<head>` if I was on a blog post. Unfortunately, I was bumping into an issue where my blocks weren't showing up. And I found out that you can't mix 11ty layout chaining with Nunjucks block inheritance - [this is by design](https://github.com/11ty/eleventy/issues/834#issuecomment-569474008). Fortunately, we can get around this problem. For example, if we wanted to add `ogtags` as a block, you would declare it in the base template.
 
+```html
     <html>
     	<head>
         {% block ogtags %}
         {% endblock %}
     	</head>
     </html>
-    
+
+```
 
 Now in your post template, remove `layout: layouts/base.njk` from the frontmatter. Instead, use Nunjucks `extends` (**note**: you can still have other frontmatter data). And that's it! The `meta` tags will now appear in your `<head>` if you're on a post page.
 
+```html
     ---
     templateClass: tmpl-post
     ---
@@ -84,7 +89,8 @@ Now in your post template, remove `layout: layouts/base.njk` from the frontmatte
     <meta property="og:description" content="{{ description }}" />
     <meta property="og:type" content="article" />
     {% endblock %}
-    
+
+```
 
 ### Take the time to design
 
@@ -97,12 +103,13 @@ I screwed the pooch on this one. When I flipped the switch in production, I did 
 * Add a `_redirects` file with your redirect rule to the 11ty project.
 * Add a passthrough copy in `.eleventy.js`. The passthrough copy will copy your `_redirects` file to the publish directory (`/dist` for me).
 
+```bash
     # src/_redirects
     /blog-posts/:id /posts/:id 302
     
     # .eleventy.js
     eleventyConfig.addPassthroughCopy("src/_redirects");
-    
+```    
 
 ***
 
