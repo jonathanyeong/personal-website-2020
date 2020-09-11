@@ -21,3 +21,31 @@
     }
   }
 }
+
+.tmpl-post {
+  padding: 1rem;
+
+  @media (min-width: $md) {
+    padding: 0;
+  }
+
+  img {
+    display: block;
+    max-width: var(--ten-column-width);
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .hero-inner {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 0;
+
+    h1 {
+      font-size: 2.5rem;
+      @media (min-width: $md) {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}

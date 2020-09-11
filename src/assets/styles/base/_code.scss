@@ -21,14 +21,14 @@ pre {
 }
 pre[class*="language-"],
 pre  {
-	padding: 1.5em 1rem;
+	padding: 1rem 1rem;
 	margin: .5em 0;
 	border-radius: 3px;
 	overflow: auto;
-}
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+
+	code[class*="language-"] {
+		padding: 0;
+	}
 }
 .token.comment, .token.prolog, .token.doctype, .token.cdata {
 	color: #75715e;

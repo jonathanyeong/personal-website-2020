@@ -22,40 +22,11 @@ main :first-child {
   margin: 0 auto;
 }
 
-.tmpl-post {
-  img {
-    display: block;
-    max-width: var(--eight-column-width);
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .hero-inner {
-    background: var(--primary-color);
-    color: var(--white);
-    padding: 0;
-
-    h1 {
-      font-size: 2.5rem;
-      @media (min-width: $md) {
-        font-size: 3.5rem;
-      }
-    }
-  }
-}
-
 .tmpl-post-list {
   padding: 1rem 1rem 4rem 1rem;
 
   @media (min-width: $md) {
     padding: 2rem 0 4rem 0;
-  }
-}
-
-.tmpl-post {
-  padding: 1rem;
-  @media (min-width: $md) {
-    padding: 0;
   }
 }
 
@@ -67,4 +38,9 @@ main :first-child {
 .see-more__container {
   display: flex;
   justify-content: flex-end;
+}
+
+hr {
+  border-style: solid;
+  border-color: var(--gray);
 }
