@@ -1,0 +1,18 @@
+---
+pagination:
+  data: collections.posts
+  size: 1
+  alias: post
+permalink: /posts/{{ post.fileSlug }}/og-image/
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic social sharing image for “{{ post.data.title }}”</title>
+    <meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+  <h1 class="h1">{{ post.data.title }}</h1>
+</body>
