@@ -3,32 +3,30 @@ date: 2020-09-25T00:00:00-07:00
 title: Lessons from my first conference talk
 description: 'Now that I''ve had some time to process my thoughts. I''ve come up with
   some lessons learnt from my first conference talk. '
-published: false
+published: true
 
 ---
-Elixir conference happened earlier this month, and like all conferences this year, it was virtual. I wanted to give a huge shoutout to the organizers! Even though it was a virtual conference, they were able to deliver on the conference experience. This conference is a special one for me because it was my first time attending an Elixir conf. And it was the first time I ever gave a conference talk. The talk I gave was a [deep dive into Elixir](https://2020.elixirconf.com/speakers/111/talk). Specifically, I chose to dive into how the pipe operator worked. It was an awesome learning experience. And now that I've had some time to process my thoughts, I wanted to share my takeaways.
+Elixir conference happened earlier this month, and like all conferences this year, it was virtual. I wanted to give a huge shoutout to the organizers! Even though it was a virtual conference, they were able to deliver on a great conference experience. This conference is a special one for me because it was my first time attending an Elixir conf. And it was the first time I ever gave a conference talk. The talk I gave was a [deep dive into Elixir](https://2020.elixirconf.com/speakers/111/talk). Specifically, I chose to dive into how the pipe operator worked. It was an awesome learning experience. And now that I've had some time to process my thoughts, I wanted to share my takeaways.
 
 ## Practice early, practice often
 
-This advice is nothing new. But still an important one to keep in mind. One thing that helped me was to practice without slides. Going through this process helped me figure out the flow of the talk and the central idea that I wanted to drive home. And it was faster than spending time on slides upfront. Once I had some slides I started doing dry runs with people at work, my girlfriend, and other developer friends (thanks Saron!). Their feedback helped me refine the flow of my talk in ways that I wouldn't have thought of by myself.
+This advice is nothing new. But still an important one to keep in mind. One thing that helped me was to practice without slides. Going through this process helped me figure out the flow of the talk and the central idea that I wanted to drive home. And it was faster than spending time on slides upfront. Once I had some slides I started doing dry runs with people at work, my girlfriend, and other developer friends. Their feedback helped me refine the flow of my talk in ways that I wouldn't have thought of by myself.
 
 For virtual tips, I learnt that going through your setup is really important. Should I be standing, or sitting? Should I face the camera, or have it off to the side? What should my screen setup be? These all seem like basic questions, but having the same setup every time you practice helps get you in the right mindset. Finally, practice talking in front of a camera. I found this surprisingly difficult, and it took me a bit of time for it to feel comfortable. I still think it's less scary then talking in front a crowd of people!
 
 ## Slides take longer than you think
 
-Slides were such a time sink for me. I used Keynote and the default theme for my slides. Even then, slides took a third, if not more, of my time. Changing content was partly to blame. As I started understanding concepts, I either added or fixed previous slides. But most of the time was spent building and formatting the slides.
+Slides unexpectedly took a lot of time. I used Keynote and the default theme for my slides. Even then, slides took a third, if not more, of my time. Changing content was partly to blame. As I started understanding concepts, I either added or fixed previous slides. But most of the time was spent building and formatting the slides.
 
 My first tip with slides is to make code big! If you have a many lines of code you can highlight the section you're specifically talking about. You can use animations for this, but I used layers instead. The base layer was the entire code snippet you wanted to show, set to an opacity of 40%. And the top layer was the specific code block you're demonstrating with opacity of 100%. Here's a screenshot of a slide with the layers slightly offset so you can see what that looks like.
 
-![](https://res.cloudinary.com/jonathan-yeong/image/upload/v1601042611/personal-blog/offset_slide_mxxtbv.png)
-
-Also you generally shouldn't have lots of text on your slide. If you have some stats you wanted to share that may be okay. But that might be better served as a graphic. Essentially, you want to keep each slide focused on a central idea, or as an anchor to what you're talking about. Think of a slide as a bullet point and not a script.
+![slide with layers offset](https://res.cloudinary.com/jonathan-yeong/image/upload/v1601042611/personal-blog/offset_slide_mxxtbv.png)
 
 Finally, for Keynote alternatives, I hear good things about [slides.com](http://slides.com) and [deckset.com](http://deckset.com).
 
 ## Just apply
 
-This is another piece of advice that is thrown around a lot. But just applying totally works! I applied on a whim, and somehow my talk got accepted. I was new to Elixir, and I wanted to do a deep dive into the language. I thought applying for this talk would give me that motivation. And I thought people might find that journey interesting. An issue I've always faced in the past was figuring out what to talk about. For some inspiration, here are the themes I saw in the conference:
+This is another piece of advice that is thrown around a lot. But it's great advice! I applied on a whim, and somehow my talk got accepted. I was new to Elixir, and wanted to learn about the language. I thought applying for this talk would give me that motivation. Luckily, other people (at least the conf organizers) found that journey interesting. An issue I've always faced in the past was figuring out what to talk about. For some inspiration, here are the themes I saw in the conference:
 
 * Teaching others something you learnt.
 * Sharing updates on an open source project
