@@ -11,8 +11,12 @@ permalink: /posts/{{ post.fileSlug }}/og-image/
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic social sharing image for “{{ post.data.title }}”</title>
+    <link rel="stylesheet" href="{{ '/assets/styles/main.min.css' | url }}">
     <meta name="robots" content="noindex,nofollow">
 </head>
 <body>
-  <h1 class="h1">{{ post.data.title }}</h1>
+  <div class="og-image__container">
+    <h1 class="h1">{{ post.data.title }}</h1>
+    <p>Jonathan Yeong | {{ post.date | htmlDateString }}</p>
+  </div>
 </body>

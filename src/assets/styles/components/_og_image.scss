@@ -1,0 +1,13 @@
+.og-image__container {
+  background: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 315px;
+  text-align: center;
+  h1 {
+    margin: 0;
+  }
+}
