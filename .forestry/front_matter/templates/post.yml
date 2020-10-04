@@ -18,4 +18,5 @@ fields:
   label: published
 pages:
 - src/posts/2020-blog-refresh-the-process-and-lessons-learnt.md
+- src/posts/draft-post.md
 - src/posts/lessons-from-my-first-conference-talk.md
