@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
-  "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "name": "jonathan-yeong-personal-site",
+  "version": "2.0.0",
+  "description": "Jonathan Yeong's personal site - forked off 11ty base blog",
   "scripts": {
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
@@ -12,18 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/jonathanyeong/personal-website-2020"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Jonathan Yeong",
+    "email": "hello@jonathanyeong.com",
+    "url": "https://jonathanyeong.com/"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/jonathanyeong/personal-website-2020/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "homepage": "https://github.com/jonathanyeong/personal-website-2020#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-navigation": "^0.1.6",
