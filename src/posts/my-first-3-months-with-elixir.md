@@ -40,7 +40,7 @@ My learning process can be broken down into two parts; hands-on coding and readi
 
 ![Yes, I've only done the easy exercises](https://res.cloudinary.com/jonathan-yeong/image/upload/v1601920560/personal-blog/Screen_Shot_2020-10-05_at_10.55.38_AM_z9s5vy.png "Exercism Elixir track")
 
-_Yup, I've only done the easy exercises_ 😂
+_Exercism Elixir track - Yup, I've only done the easy exercises_ 😂
 
 From challenges, I started building Elixir applications. Well, just one application, a URL shortener. This project taught me about tracking state with GenServer, how to start a webserver, and how to build a router. Another idea that comes to mind for a side project is a CSV parser that will store transformed data into a database. Hopefully, this will teach me about reading a file and how to use Ecto. Ultimately, everyone learns differently. And I encourage you to experiment and see what works for you.
 
