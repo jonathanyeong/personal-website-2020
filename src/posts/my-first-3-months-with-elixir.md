@@ -1,8 +1,8 @@
 ---
-date: 2020-10-05T00:00:00-07:00
+date: 2020-10-05T00:00:00.000-07:00
 title: My first 3 months with Elixir
-description: I've been learning Elixir on the side for the past 3 months. I wanted
-  to share the plan I've roughly followed. And my learning process.
+description: I've been learning Elixir on the side for the past 3 months. Here is
+  the plan I've roughly followed. And my learning process.
 published: false
 
 ---
