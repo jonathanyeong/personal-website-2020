@@ -46,7 +46,7 @@ From challenges, I started building Elixir applications. Well, just one applicat
 
 ## What's next?
 
-Next up for me is learning how to deploy an Elixir app in production. Also, understanding how to read/write from a database or a file. And then more time spent with [Plugs](https://hexdocs.pm/plug/readme.html "Plug") and concurrency. I'm sure tomorrow I'll add another thing onto the list! I'm also currently reading [Metaprogramming Elixir](https://pragprog.com/titles/cmelixir/metaprogramming-elixir/) by Chris McCord. He does a deep dive into metaprogramming and explains concepts really well. The final piece of advice I can give is revisiting code you've written in the past. It's always nice to see where you started and how far you've come. Good luck with your Elixir journey!
+Next up for me is learning how to deploy an Elixir app. Also, understanding how to read/write from a database or a file. And then more time spent with [Plugs](https://hexdocs.pm/plug/readme.html "Plug") and concurrency. I'm sure tomorrow I'll add another thing onto the list! I'm also currently reading [Metaprogramming Elixir](https://pragprog.com/titles/cmelixir/metaprogramming-elixir/) by Chris McCord. He does a deep dive into metaprogramming and explains concepts really well. The final piece of advice I can give is revisiting code you've written in the past. It's always nice to see where you started and how far you've come. Good luck with your Elixir journey!
 
 ## Resources
 
