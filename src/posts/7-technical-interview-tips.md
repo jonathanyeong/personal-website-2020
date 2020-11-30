@@ -1,6 +1,6 @@
 ---
 date: 2020-11-30T00:00:00-08:00
-title: 7 technical interview tips
+title: 7 pieces of advice to help you with technical interviews
 description: Here are seven pieces of advice when doing a technical interview for
   the first time.
 published: false
