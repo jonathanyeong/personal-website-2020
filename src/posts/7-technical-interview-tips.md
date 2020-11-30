@@ -1,7 +1,8 @@
 ---
 date: 2020-11-30T00:00:00-08:00
 title: 7 technical interview tips
-description: ''
+description: Here are seven pieces of advice when doing a technical interview for
+  the first time.
 published: false
 
 ---
