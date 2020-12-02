@@ -10,11 +10,9 @@ fields:
 - type: text
   name: title
   label: Title
-  description: Title of post
 - type: boolean
   name: published
   label: Published?
-  description: Check to publish the post.
 - name: cover_image
   type: text
   config:
