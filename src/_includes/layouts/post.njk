@@ -10,6 +10,7 @@ templateClass: tmpl-post
   <meta property="og:description" content="{{ description }}" />
 {% endif %}
 {% if cover_image %}
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:image" content="{{ cover_image }}" />
   <meta property="twitter:image" content="{{ cover_image }}" />
 {% endif %}
