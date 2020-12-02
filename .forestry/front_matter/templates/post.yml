@@ -4,18 +4,34 @@ hide_body: false
 fields:
 - type: datetime
   name: date
-  label: date
+  label: Date
   config:
     date_format: YYYY-MM-DD
+  description: Date published of post
 - type: text
   name: title
-  label: title
-- type: text
-  name: description
-  label: description
+  label: Title
+  description: Title of post
 - type: boolean
   name: published
-  label: published
+  label: Published?
+  description: Check to publish the post.
+- name: cover_image
+  type: text
+  config:
+    required: false
+  label: Cover Image
+  description: Add URL of cover image
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Add a description for og:description tag
 pages:
 - src/posts/2020-blog-refresh-the-process-and-lessons-learnt.md
 - src/posts/hacktoberfest-2020-recap.md
