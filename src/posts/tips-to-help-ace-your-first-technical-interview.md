@@ -5,7 +5,7 @@ description: Seven tips to help you ace your first interview. As an interviewer,
   seen strong candidates use these during interviews. And I've used these tips when
   I've interviewed in the past.
 published: true
-cover_image: https://res.cloudinary.com/jonathan-yeong/image/upload/v1606926116/personal-blog/cover_images/7-tips-to-help-you-ace-your-first-technical-interview.jpg
+cover_image: https://res.cloudinary.com/jonathan-yeong/image/upload/v1606926567/personal-blog/cover_images/7-tips-og-image_smi7a1.jpg
 
 ---
 As an interviewer, one of my favorite interviews was one where the candidate didn't finish the problem. This interview is memorable because of the dialogue. I understood their thought process, they asked the right questions, and they were receptive to feedback. After interviewing a hundred or so candidates in the last 3 years, it's clear that there's more to a technical interview than the code challenge. And it can be daunting if it's your first time going through this process. I wanted to share seven pieces of advice to help you ace your first technical interview. These tips are what I've seen from strong candidates as an interviewer. And also what I've followed as an interviewee in the past. At the end of this post, I've added a note on how I practice for coding challenges. Without further ado, tip #1.
