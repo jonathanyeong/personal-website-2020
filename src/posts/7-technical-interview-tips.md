@@ -1,18 +1,27 @@
 ---
-date: 2020-11-30T00:00:00-08:00
-title: 7 pieces of advice to help you with technical interviews
-description: Here are seven pieces of advice when doing a technical interview for
-  the first time.
-published: false
+date: 2020-12-01T00:00:00-08:00
+title: 7 tips to help you ace your first technical interview
+description: Seven tips to help you ace your first interview. As an interviewer, I've
+  seen strong candidates use these during interviews. And I've used these tips when
+  I've interviewed in the past.
+published: true
 
 ---
-Technical interviews can be a daunting experience especially if it's your first time. Well even if it's not your first time, they can be very different to how you code day to day. After being on both sides of the interview process. I wanted to share seven pieces of advice for someone doing a technical interview for the first time. These tips are what I've seen from strong candidates as an interviewer. And also what I've followed as an interviewee in the past. At the end of this post, I've added a note on how I practice for coding challenges. Without further ado, tip #1.
+As an interviewer, one of my favorite interviews was one where the candidate didn't finish the problem. This interview is memorable because of the dialogue. I understood their thought process, they asked the right questions, and they were receptive to feedback. After interviewing a hundred or so candidates in the last 3 years, it's clear that there's more to a technical interview than the code challenge. And it can be daunting if it's your first time going through this process. I wanted to share seven pieces of advice to help you ace your first technical interview. These tips are what I've seen from strong candidates as an interviewer. And also what I've followed as an interviewee in the past. At the end of this post, I've added a note on how I practice for coding challenges. Without further ado, tip #1.
 
 ## 1. Clarify the problem
 
-After I hear the problem, I'll repeat back what the interviewer is asking me to do. From there, I'll ask questions to clarify the scenario. These questions help me understand definitions and constraints (scale, use cases, etc). Don't go overboard! You don't want to get too in the weeds. Aim to get to a place where you're able to make an informed first step.
+After I hear the problem, I'll repeat back what the interviewer is asking me to do. From there, I'll ask questions to clarify the scenario. Some example questions could be:
 
-## 2. Talk through your solution
+* Asking to understand different cases. For example, if asked to sort items based on a property - "what would the ordering of items be if the property is the same for two items?"
+* Asking about constraints. For example, "What is the max amount of items I need to process?", "Would I assume this input is valid, or do I need to do validations?"
+* For system design questions, you could ask "how many users are we expecting on an average day?" or "how would we want to use the data coming from x?"
+
+These questions help me understand definitions and constraints. It also defines the direction of the solution, e.g. how you solve a problem with only one user can be very different to how you solve it for millions of users.
+
+Finally, don't go overboard! You don't want to get too in the weeds. Aim to get to a place where you're able to make an informed first step.
+
+## 2. Verbalize your thought process
 
 As I start to think about my solution I'll verbalize what's going through my head. I find that talking through my thought process clues the interviewer into how I think. While this strategy works for me, I know that it can be hard to think and talk at the same time. It's totally fine to let the interviewer know you're pausing to think. Either way you never want to leave the interviewer in the dark wondering what the candidate is thinking.
 
@@ -22,9 +31,11 @@ Know the limitations and the benefits of the tools and technology you use everyd
 
 When talking about tradeoffs try to stay away from "stake in the ground" claims without evidence. In other words, don't be overly opinionated about the tools you choose. Every tool will have its place. One way to learn about tradeoffs is to build side projects. Side projects give you concrete examples of how a technology works in certain situations. They let you explore tradeoffs hands on.
 
-## 4. Take things step by step
+## 4. Plan out your solution
 
-I will always write out a plan for a solution, either on paper or as comments in the code. Cluing the interviewer into your plan is part of talking through the solution. But now you need to execute the plan. At this point, I try not to skip around the plan. Unfortunately, more often than not, your initial plan will change as you start working on a problem. If you need to deviate, communicate why with the interviewer. As an interviewer, it's hard to keep track of a candidate's thought process if they're constantly jumping around a solution.
+During an interview, I will always plan out my solution. I'll either write pseudocode or draw out some steps on a whiteboard. I write my plan in the beginning of the interview as I'm verbalizing my thought process. Also, I sometimes try to make the problem easier to solve. One way I simplify the problem is to reduce the problem set. For example, instead of solving for an array of many items, can your solution work for one item? Making it easier to solve helps me get started.
+
+Once I have a plan, I try to stick to it. Unfortunately, more often than not, my plan will start changing as I work on the problem. If you need to deviate, communicate why with the interviewer. As an interviewer, it's hard to keep track of a candidate's thought process if they're constantly jumping around a solution.
 
 ## 5. Take a breath and slow down
 
