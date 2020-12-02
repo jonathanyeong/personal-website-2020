@@ -11,6 +11,7 @@ templateClass: tmpl-post
 {% endif %}
 {% if cover_image %}
   <meta property="og:image" content="{{ cover_image }}" />
+  <meta property="twitter:image" content="{{ cover_image }}" />
 {% endif %}
 <meta property="og:type" content="article" />
 {% endblock %}
