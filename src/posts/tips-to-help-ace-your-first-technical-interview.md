@@ -1,5 +1,5 @@
 ---
-date: 2020-12-01T00:00:00-08:00
+date: 2020-12-01T00:00:00.000-08:00
 title: 7 tips to help you ace your first technical interview
 description: Seven tips to help you ace your first interview. As an interviewer, I've
   seen strong candidates use these during interviews. And I've used these tips when
@@ -53,4 +53,4 @@ Interviewing is a 2 way streak. Be sure to note how the interviewer interacts wi
 
 Interviewing is stressful, and it takes practice to get good at. One way to improve is to do a lot of interviews. That is easier said than done though. So I also practice with timed coding challenges. [HackerRank](https://www.hackerrank.com/) and [LeetCode](https://leetcode.com/) are popular sites. I also like [Code Signal](https://codesignal.com/developers/) which has a nice code path for challenges. I'll also treat these coding problems like a real interview scenario where I talk through my problem. There's also Youtube videos of mock interviews or of how other devs break down coding challenges. Some of my favorites are by [interviewing.io](https://www.youtube.com/watch?v=XXLVi2y2GrY) and [CS Dojo](https://www.youtube.com/watch?v=GBuHSRDGZBY).
 
-Technical interviews are far from perfect. It can be hard to judge someone's ability through a 1 hour coding problem. Hopefully, armed with these tips and resources you should be well equipped for your interview. If you have found these tips useful, it would be awesome if you shared it with a friend. If you want to talk more about interviewing hit me up on Twitter. Good luck with your interview!
+Technical interviews are far from perfect. It can be hard to judge someone's ability through a 1 hour coding problem. Hopefully, armed with these tips and resources you should be well equipped for your interview. If you have found these tips useful, it would be awesome if you shared it with a friend. If you want to talk more about interviewing hit me up on [Twitter](https://twitter.com/JonoYeong "Twitter"). Good luck with your interview!
