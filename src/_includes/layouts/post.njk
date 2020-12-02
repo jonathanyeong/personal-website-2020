@@ -9,6 +9,9 @@ templateClass: tmpl-post
 {% if description %}
   <meta property="og:description" content="{{ description }}" />
 {% endif %}
+{% if cover_image %}
+  <meta property="og:image" content="{{ image }}" />
+{% endif %}
 <meta property="og:type" content="article" />
 {% endblock %}
 
