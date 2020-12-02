@@ -7,7 +7,6 @@ fields:
   label: Date
   config:
     date_format: YYYY-MM-DD
-  description: Date published of post
 - type: text
   name: title
   label: Title
