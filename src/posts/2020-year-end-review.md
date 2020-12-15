@@ -27,8 +27,6 @@ At the start of 2020, none of these wins were on my radar! I feel very lucky tha
 
 I started the year slow, not having written anything until the end of May. Honestly, my goal of blogging consistently wasn't concrete until June. At that point, I decided I wanted to publish a blog post a month (6 posts in the year). At the end of this year, I've written 18 blog posts! That's six times more than last year! This number makes me so damn happy. I've struggled with keeping up a writing habit for the past 3 or so years. I've constantly battled self doubt and whether I was bringing any value. And for the last six months I've poured hours of time into writing, editing, and researching blog posts. So after all of that, it feels really nice to complete a goal.
 
-> At the end of this year, I've written 18 blog posts! That's six times more than last year!
-
 When I started writing blog posts in June, I hooked up [Plausible Analytics](https://plausible.io/) to my site. I wanted a straightforward, privacy oriented analytics tool. Throughout the year, I've been focusing on writing content that I want to write. And not looking at numbers too closely. It's about time I dig into the analytics and see what nuggets of knowledge I can find. Here are my website stats at the end of 2020.
 
 * 1.2k unique visitors
