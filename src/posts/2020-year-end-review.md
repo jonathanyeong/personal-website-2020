@@ -2,7 +2,7 @@
 date: 
 title: 2020 Year End Review
 published: false
-cover_image: ''
+cover_image: https://res.cloudinary.com/jonathan-yeong/image/upload/v1608053349/personal-blog/cover_images/2020-year-end-review_ckkcnn.jpg
 description: Doing a year end review of 2020. It's been a crazy year and it feels
   like I haven't done much this year. But I've finally found some headspace to do
   a reflection. I want to share my wins, talk about the challenges, and any lessons
