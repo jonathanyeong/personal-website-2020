@@ -1,7 +1,7 @@
 ---
-date: 
+date: 2020-12-15T00:00:00-08:00
 title: 2020 Year End Review
-published: false
+published: true
 cover_image: https://res.cloudinary.com/jonathan-yeong/image/upload/v1608053349/personal-blog/cover_images/2020-year-end-review_ckkcnn.jpg
 description: Doing a year end review of 2020. It's been a crazy year and it feels
   like I haven't done much this year. But I've finally found some headspace to do
