@@ -1,14 +1,15 @@
 {
   "name": "jonathan-yeong-personal-site",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Jonathan Yeong's personal site - forked off 11ty base blog",
   "scripts": {
-    "watch:eleventy": "eleventy --serve",
-    "watch:sass": "npm run sass -- --watch",
-    "start": "npm-run-all sass --parallel watch:*",
-    "sass": "sass --style=compressed src/assets/styles/main.scss src/assets/styles/main.min.css",
-    "build": "npm run sass && eleventy",
-    "debug": "DEBUG=* eleventy"
+    "dev:eleventy": "eleventy --serve",
+    "dev:postcss": "postcss src/assets/styles/main.css -d dist/assets/styles --config ./postcss.config.js -w",
+    "prod:postcss": "postcss src/assets/styles/main.css -d dist/assets/styles --config ./postcss.config.js",
+    "prod:eleventy": "ELEVENTY_ENV=production eleventy",
+    "clean": "rimraf dist",
+    "start": "npm-run-all clean --parallel dev:*",
+    "build": "NODE_ENV=production npm-run-all clean --parallel prod:*"
   },
   "repository": {
     "type": "git",
@@ -29,13 +30,20 @@
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "css-loader": "^5.0.1",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "postcss-loader": "^4.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^2.7.1"
   },
   "dependencies": {
-    "sass": "^1.26.10",
-    "striptags": "^3.1.1"
+    "autoprefixer": "^10.1.0",
+    "striptags": "^3.1.1",
+    "tailwindcss": "^2.0.2"
   }
 }
