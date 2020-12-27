@@ -4,7 +4,7 @@
   "description": "Jonathan Yeong's personal site - forked off 11ty base blog",
   "scripts": {
     "watch:eleventy": "eleventy --serve",
-    "watch:sass": "npm run sass -- --watch",
+    "watch:sass": "npm run sass --watch src/assets/styles/main.scss:src/assets/styles/main.min.css",
     "start": "npm-run-all sass --parallel watch:*",
     "sass": "sass --style=compressed src/assets/styles/main.scss src/assets/styles/main.min.css",
     "build": "npm run sass && eleventy",
