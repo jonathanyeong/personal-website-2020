@@ -37,5 +37,5 @@ templateClass: tmpl-post
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
 </ul> #}
-<script async data-uid="cc0a20609d" src="https://jonathanyeong.ck.page/cc0a20609d/index.js"></script>
+{% include "../partials/newsletter-signup.njk" %}
 {% endblock %}

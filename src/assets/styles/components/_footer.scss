@@ -9,8 +9,8 @@
 
 .footer__container {
   display: flex;
-  justify-content: space-between;
   text-align: left;
+  justify-content: center;
   max-width: var(--ten-column-width);
   margin: 0 auto;
   padding: 0 1rem;
@@ -19,12 +19,6 @@
   @media (min-width: $md) {
     flex-direction: row;
     padding: 0;
-  }
-}
-
-.footer__social-shares {
-  @media (min-width: $md) {
-    margin-left: 2.5rem;
   }
 }
 
