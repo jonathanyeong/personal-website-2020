@@ -1,0 +1,19 @@
+---
+templateClass: tmpl-post
+---
+{% extends 'layouts/base.njk' %}
+
+{% block header %}
+<div class="tmpl-post hero">
+  <div class="hero-inner">
+    <h1 class="u-mt4 u-mb4">{{ title }}</h1>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="post-container u-pt3 u-pb3">
+  {{ content | safe }}
+</div>
+{% endblock %}
