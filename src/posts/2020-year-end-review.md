@@ -23,7 +23,7 @@ This year I felt more connected to the tech community. Which is a strange thing 
 
 At the start of 2020, none of these wins were on my radar! I feel very lucky that I had the opportunity to do all of these things. In fact, I only had one major focus this year. And that was to start blogging consistently. So I want to do a deeper dive into my blogging journey.
 
-### My Blogging Journey
+## My Blogging Journey
 
 I started the year slow, not having written anything until the end of May. Honestly, my goal of blogging consistently wasn't concrete until June. At that point, I decided I wanted to publish a blog post a month (6 posts in the year). At the end of this year, I've written 18 blog posts! That's six times more than last year! This number makes me so damn happy. I've struggled with keeping up a writing habit for the past 3 or so years. I've constantly battled self doubt and whether I was bringing any value. And for the last six months I've poured hours of time into writing, editing, and researching blog posts. So after all of that, it feels really nice to complete a goal.
 
@@ -62,7 +62,7 @@ While I'm happy with my wins this year, there's definitely a lot of things that 
 
 So now that my ego has sufficiently deflated, I wanted to take these challenges that I faced and share some lessons I learnt from tackling them. I tried to make the lessons as actionable as possible. But some are more mindset shifts than action items*.*
 
-### Make writing easy
+## Make writing easy
 
 It takes me a long time to write a blog post. So throughout the year I tried different ways to improve this process. By now, I can get in the flow of writing a post quite quickly. But it still takes me a long time to finish it. These are all the different things that I tried:
 
@@ -72,19 +72,19 @@ It takes me a long time to write a blog post. So throughout the year I tried dif
 * **Improve your writing workflow**. I spent a lot of time iterating on my blogging workflow. I currently write all my posts in Notion. Having it in Notion means I have my outline, research, and drafts all in one place. After a post is complete, I'll copy and paste it into [Forestry.io](http://forestry.io), my CMS, which preserves all my formatting.
 * **Just write**. This lesson is easier said than done, especially when you're writing a post on your computer. It's so easy to delete sentences or undo a bunch of your writing. One reason it takes me so long to write is that I'm constantly editing sentences or paragraphs as I'm writing them. I've had to be very intentional about when I edit and when I write. I'll focus on just getting words onto a page. It doesn't need to be grammatically correct or worded particularly well. As long as the ideas are there, I know I can edit it later.
 
-### Have a clear plan with side projects
+## Have a clear plan with side projects
 
 I spent a lot of my time this year getting organized. Being organized is crucial for those projects that I might not touch for weeks on end. I'd much rather spend my time working on the project than trying to figure out what I was doing weeks ago. Another bonus of having a clear plan with side projects is prioritization. I could look ahead with tasks for a project and rank them in order of impact or fun-ness. I ended up writing about my process, have a read if you want a deeper look into [how I organize my projects with Github and Notion](https://www.jonathanyeong.com/posts/using-github-and-notion-to-organise-side-projects/).
 
-### Going broad is fun but at some point go deep
+## Going broad is fun but at some point go deep
 
 Being stuck inside has given me the time to explore new things. I started learning Elixir and React. I've picked up Figma and have been reading up on UI/UX design. Trying out a bunch of different tools has been super fun. But it's felt like I've been at the beginner stage all year. At some point I need to go deep. This lesson is more of a mindset shift than an actionable item. And it's directly related to the next lesson.
 
-### Don't compare yourself to others; don't go chasing waterfalls
+## Don't compare yourself to others; don't go chasing waterfalls
 
 I constantly struggled with this throughout the year. Especially, when you see devs on twitter doing awesome things. Or when you see the new hotness come out (looking at you Rust). It's really hard not to drop what you're doing and go explore something else. There's two big takeaways from this lesson. One, you don't know the situation of the person you're comparing yourself to. So it might not be fair to compare yourself to them. Two, don't stay in tutorial purgatory. Pick a language or framework and go build something substantial with it. Go deep rather than staying at that surface level.
 
-### Join a community
+## Join a community
 
 One major reason I was able to write so much this year was because I joined a couple of communities. The first shoutout goes to [the Changelog's](https://changelog.com/community) blogging channel in Slack. I met some great people there. We read each others drafts and we were in a book club together. Itching for more experiences like this, I found [Monica Lent's Blogging for Devs](https://bloggingfordevs.com/) group. This community is a pay to enter community. But it's been worth it. Being around a bunch of developers all working towards the same goal has been extremely inspiring. It's also given me a lot of tools and ideas for how I want to approach blogging in 2021.
 
