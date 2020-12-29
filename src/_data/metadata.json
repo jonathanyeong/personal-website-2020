@@ -1,9 +1,9 @@
 {
   "title": "Jonathan Yeong",
   "url": "https://www.jonathanyeong.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "A software engineer based in Seattle. I write about web technology and my dev journey.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "A software engineer based in Seattle. I write about web technology and my dev journey.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://www.jonathanyeong.com/"
