@@ -26,16 +26,10 @@ templateClass: tmpl-post
 {% endblock %}
 
 {% block content %}
-
-<div class="post-container u-pt3 u-pb3">
-  {{ content | safe }}
-</div>
-{# <hr>
-<ul>
-  {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-  {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul> #}
-{% include "../partials/newsletter-signup.njk" %}
+  <main id="recentArticles" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <div class="post-container u-pt3 u-pb3">
+      {{ content | safe }}
+    </div>
+    {% include "../partials/newsletter-signup.njk" %}
+  </main>
 {% endblock %}

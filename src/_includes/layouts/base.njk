@@ -33,40 +33,6 @@
     </div>
 
     {% block header %}
-      <div class="hero">
-        <div class="hero-inner">
-          <h1>Hi, I'm Jonathan 👋</h1>
-          <p>
-            A software engineer based in Seattle. I write about web technology and my dev journey.
-          </p>
-          <p class="hero-inner__social-icons">
-            <a href="mailto:hello@jonathanyeong.com" class="u-mr1">
-              <span class="visually-hidden">Email</span>
-              {% include '../../assets/icons/envelope.svg' %}
-            </a>
-            <a href="https://github.com/jonathanyeong" class="u-mr1">
-              <span class="visually-hidden">Github</span>
-              {% include '../../assets/icons/github.svg' %}
-            </a>
-            <a href="https://www.instagram.com/jonathan.yeong/" class="u-mr1">
-              <span class="visually-hidden">Instagram</span>
-              {% include '../../assets/icons/instagram.svg' %}
-            </a>
-            <a href="https://www.linkedin.com/in/jonathan-yeong" class="u-mr1">
-              <span class="visually-hidden">Linkedin</span>
-              {% include '../../assets/icons/linkedin.svg' %}
-            </a>
-            <a href="https://twitter.com/JonoYeong" rel="me">
-              <span class="visually-hidden">Twitter</span>
-              {% include '../../assets/icons/twitter.svg' %}
-            </a>
-          </p>
-        </div>
-        <a href="#recentArticles" class="hero-circle">
-          <span class="visually-hidden">Jump to Recent Articles</span>
-          {% include '../../assets/icons/arrow.svg' %}
-        </a>
-      </div>
     {% endblock %}
 
     <main id="recentArticles" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
