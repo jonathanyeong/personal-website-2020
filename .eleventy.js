@@ -50,8 +50,8 @@ module.exports = function(eleventyConfig) {
       .filter(
         post => post.data.featured_post && livePosts(post)
       )
-      .sort((curr_post,next_post) => {
-        return curr_post.data.post_weight - next_post.data.post_weight;
+      .sort((a,b) => {
+        return a.data.post_weight - b.data.post_weight;
       });
   });
 
