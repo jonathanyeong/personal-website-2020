@@ -1,12 +1,15 @@
 {% for post in postslist | reverse %}
 
-  <a href="{{ post.url | url }}" class="postlist-item u-mb1">
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    <span class="postlist-item__title">
-      {{ post.data.title }}
-    </span>
-    <span class="postlist-item__excerpt">
-      {% excerpt post %} <span class="postlist-read-more">Read More</span>
-    </span>
-  </a>
+  <article class="post-card">
+    {# <div class="post-card__background"></div> #}
+    <a href="{{ post.url | url }}" class="post-card__foreground u-mb1">
+      <time class="post-card__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      <span class="post-card__title">
+        {{ post.data.title }}
+      </span>
+      <span class="post-card__excerpt">
+        {% excerpt post %} <span class="post-card__read-more">Read More</span>
+      </span>
+    </a>
+  </article>
 {% endfor %}
