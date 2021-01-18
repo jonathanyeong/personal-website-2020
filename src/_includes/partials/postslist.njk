@@ -1,8 +1,7 @@
 {% for post in postslist | reverse %}
 
-  <article class="post-card">
-    {# <div class="post-card__background"></div> #}
-    <a href="{{ post.url | url }}" class="post-card__foreground u-mb1">
+  <article class="post-card u-mb1">
+    <a href="{{ post.url | url }}" class="post-card__inner">
       <time class="post-card__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
       <span class="post-card__title">
         {{ post.data.title }}
