@@ -2,7 +2,7 @@
 date: 2021-01-21T00:00:00-08:00
 title: A guide to the Javascript tools ecosystem
 published: false
-cover_image: ''
+cover_image: https://res.cloudinary.com/jonathan-yeong/image/upload/v1611244940/personal-blog/cover_images/a-guide-to-js-tooling-ecosystem_dlbaid.png
 description: This post is a guide to the Javascript tool ecosystem. I look at the
   tools out there, try to define some of the features that they have, and talk about
   what I would choose for my next project.
