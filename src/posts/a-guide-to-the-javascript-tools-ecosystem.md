@@ -33,7 +33,7 @@ Recently, module bundlers have been improving their support of no configuration 
 
 For example, to build something in Parcel you will just need to specify an entry file (or multiple):
 
-```
+```bash
 parcel index.html about.html
 ```
 
