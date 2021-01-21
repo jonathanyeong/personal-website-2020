@@ -1,7 +1,7 @@
 ---
 date: 2021-01-21T00:00:00-08:00
 title: A guide to the Javascript tools ecosystem
-published: false
+published: true
 cover_image: https://res.cloudinary.com/jonathan-yeong/image/upload/v1611244940/personal-blog/cover_images/a-guide-to-js-tooling-ecosystem_dlbaid.png
 description: This post is a guide to the Javascript tool ecosystem. I look at the
   tools out there, try to define some of the features that they have, and talk about
@@ -35,7 +35,7 @@ For example, to build something in Parcel you will just need to specify an entry
 
 ```
 parcel index.html about.html
-``` 
+```
 
 Parcel, will assume some sensible defaults and bundle the right javascript files for you. All the bundles are inferred automatically. No-config bundling also exists in Webpack (version 4.0 up), Rollup, and Esbuild.
 
@@ -47,7 +47,7 @@ At a high level, tree shaking is a process where the module bundler will analyze
 //main.js
 const foobar = require('./foobar.js');
 foobar.foo()
-```    
+```
 
 Because you're requiring the entire `foobar` file, the module bundler doesn't know what code is being used or not. So tree shaking becomes much harder.
 
@@ -97,7 +97,7 @@ form.addEventListener("submit", e => {
   });
 });
 ```
-    
+
 
 ### Hot module replacement (HMR)
 
