@@ -1,6 +1,6 @@
 ---
 date: 2021-01-21T00:00:00-08:00
-title: A guide to the Javascript tool ecosystem
+title: A guide to the Javascript tools ecosystem
 published: false
 cover_image: ''
 description: This post is a guide to the Javascript tool ecosystem. I look at the
