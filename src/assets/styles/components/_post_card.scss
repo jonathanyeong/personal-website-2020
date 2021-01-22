@@ -1,13 +1,5 @@
-.tmpl-post-list {
-  h1 {
-    font-family: 'AvenirLTPro-Medium', system-ui, sans-serif;
-    color: var(--primary-color);
-    letter-spacing: 1px;
-
-    @media (min-width: $md) {
-      letter-spacing: 2px;
-    }
-  }
+.tmpl-post-list .h2 {
+  letter-spacing: 1px;
 }
 
 .post-card {
@@ -52,21 +44,17 @@
 }
 
 .post-card__title {
-  font-family: 'AvenirLTPro-Medium', system-ui, sans-serif;
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  font-family: 'AvenirLTPro-Book', system-ui, sans-serif;
+  margin-bottom: 0.8rem;
 }
 
 .post-card__read-more {
   font-family: 'AvenirLTPro-Heavy', system-ui, sans-serif;
-  font-size: 0.9rem;
   color: var(--link-color);
 }
 
 .post-card__date,
 .post-card__inner:before {
-  font-size: 0.8125em;
-  /* 13px /16 */
   color: var(--darkgray);
 }
 

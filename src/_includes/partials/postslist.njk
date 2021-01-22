@@ -1,14 +1,3 @@
 {% for post in postslist | reverse %}
-
-  <article class="post-card u-mb1">
-    <a href="{{ post.url | url }}" class="post-card__inner">
-      <time class="post-card__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      <span class="post-card__title">
-        {{ post.data.title }}
-      </span>
-      <span class="post-card__excerpt">
-        {% excerpt post %} <span class="post-card__read-more">Read More</span>
-      </span>
-    </a>
-  </article>
+  {% include "./post_card.njk" %}
 {% endfor %}
