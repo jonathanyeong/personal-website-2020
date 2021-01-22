@@ -1,13 +1,6 @@
-name: CI
+name: Lighthouse CI for Netlify sites
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
-
+on: pull_request
 
 jobs:
   build:
@@ -15,5 +8,23 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Lighthouse CI Action
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install & Build
+        run: |
+          npm install
+          npm run build
+      - name: Wait for 200 the Netlify Preview
+        uses: jakepartusch/wait-for-netlify-action@v1.2
+        id: waitFor200
+        with:
+          site_name: 'elastic-engelbart-26e6d9'
+      - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v3
+        with:
+          urls: |
+            ${{ steps.netlify.outputs.url }}
+            ${{ steps.netlify.outputs.url }}/products/
+          uploadArtifacts: true
