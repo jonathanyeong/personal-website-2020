@@ -1,4 +1,5 @@
 :root {
+  // Colors
   --red: #C5004A;
   --lightgray: #F8FAFA;
   --gray: #E5E5E5;
@@ -9,9 +10,20 @@
   --highlight-color: #82C0CC;
   --primary-font-color: #115664;
   --link-color: #287F95;
+  // Columns
   --twelve-column-width: 60rem;
   --ten-column-width: 48.75rem;
   --eight-column-width: 38.75rem;
   --six-column-width: 30rem;
+  // Z-indexes
   --top-layer: 100;
+  // Font sizes
+  --big-header: 3.815rem;
+  --heading-one: 3.052rem;
+  --heading-two: 2.441rem;
+  --heading-three: 1.953rem;
+  --heading-four: 1.563rem;
+  --heading-five: 1.25rem;
+  --small-text: 0.8rem;
+  --body-text: 1rem;
 }
