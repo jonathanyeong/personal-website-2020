@@ -24,6 +24,6 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.6.x
-          lhci autorun --collect.url=${{ steps.waitFor200.outputs.url }} --collect.url=${{ steps.waitFor200.outputs.url/pages/about/ }} --collect.numberOfRuns=5
+          lhci autorun --collect.url=${{ steps.waitFor200.outputs.url }} --collect.url=${{ steps.waitFor200.outputs.url }}/pages/about/ --collect.numberOfRuns=5
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
