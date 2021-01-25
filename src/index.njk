@@ -5,8 +5,8 @@ templateClass: tmpl-post-list
 
 {% set postslist = collections.featuredPosts %}
 
-<h1 class="h2 u-mb1 u-mt2">Featured Articles</h1>
+<h1 class="h2 u-mt2">Featured Articles</h1>
 {% include "partials/postslist.njk" %}
 <div class="see-more__container">
-  <a href="{{ '/writing/' | url }}" class="see-more__item">See all posts</a>
+  <a href="{{ '/writing/' | url }}" class="see-more__item h5">See all posts</a>
 </div>
