@@ -17,7 +17,7 @@
   border: 2px solid var(--primary-color);
   padding: 1rem 1rem;
   display: block;
-  color: var(--primary-color);
+  color: var(--primary-font-color);
   text-decoration: none;
   transition: transform .2s ease-in-out;
 
@@ -26,38 +26,29 @@
   }
 
   @media (min-width: $md) {
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding: 1.5rem 1.6rem;
   }
+}
+
+.post-card__excerpt,
+.post-card__date {
+  display: block;
+  word-wrap: break-word;
 }
 
 .post-card__date {
   color: var(--primary-color);
   margin-bottom: 0.3rem;
-}
-
-.post-card__excerpt,
-.post-card__date,
-.post-card__title {
-  display: block;
-  word-wrap: break-word;
+  word-spacing: -0.5px;
 }
 
 .post-card__title {
   font-family: 'AvenirLTPro-Book', system-ui, sans-serif;
   margin-bottom: 0.8rem;
+  word-wrap: break-word;
 }
 
 .post-card__read-more {
   font-family: 'AvenirLTPro-Heavy', system-ui, sans-serif;
   color: var(--link-color);
-}
-
-.post-card__date,
-.post-card__inner:before {
-  color: var(--darkgray);
-}
-
-.post-card__date {
-  word-spacing: -0.5px;
 }
