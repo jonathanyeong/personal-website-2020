@@ -3,9 +3,10 @@
   "version": "2.0.0",
   "description": "Jonathan Yeong's personal site - forked off 11ty base blog",
   "scripts": {
+    "clean": "rimraf dist/",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "sass --watch src/assets/styles/main.scss:src/assets/styles/main.min.css",
-    "start": "npm-run-all --parallel watch:*",
+    "start": "npm-run-all clean --parallel watch:*",
     "sass": "sass --style=compressed src/assets/styles/main.scss src/assets/styles/main.min.css",
     "build": "npm run sass && eleventy",
     "debug": "DEBUG=* eleventy"
@@ -33,7 +34,8 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.7.1"
   },
   "dependencies": {
     "sass": "^1.26.10",
