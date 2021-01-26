@@ -140,7 +140,7 @@ function extractExcerpt(article) {
   const content = article.templateContent;
 
   excerpt = striptags(content)
-    .substring(0, 300) // Cap at 200 characters
+    .substring(0, 250) // Cap at 250 characters
     .replace(/^\s+|\s+$|\s+(?=\s)/g, "")
     .trim()
     .concat("...");
