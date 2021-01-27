@@ -1,7 +1,7 @@
 .newsletter-signup {
-  display: flex;
   border: 5px solid var(--primary-color);
   border-radius: 5px;
+  display: flex;
 }
 
 .newsletter-signup__cta,
@@ -11,8 +11,8 @@
 }
 
 .newsletter-signup__cta {
-  color: var(--white);
   background-color: var(--primary-color);
+  color: var(--white);
 }
 
 .newsletter-signup__form {
@@ -24,32 +24,45 @@
   }
 
   input {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 1rem;
     width: 100%;
-    height: 2rem;
-    line-height: 2rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
+    height: 2.2rem;
   }
+
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+}
+
+.newsletter-signup__alert {
+  background: hsl(190, 42%, 65%, 50%);
+  border: 1px solid var(--highlight-color);
+  border-radius: 3px;
+  padding: 0.6rem;
+  color: var(--primary-font-color);
+  text-align: center;
 }
 
 .newsletter-signup__submit-container {
   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, .12);
-  position: relative;
   border-radius: 5px;
   background-color: var(--highlight-color);
+  position: relative;
 }
 
 .newsletter-signup__submit {
-  cursor: pointer;
-  height: 2.5rem;
-  padding: 0;
   background: var(--white);
   border: 3px solid var(--primary-color);
   border-radius: 5px;
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0;
   width: 100%;
   transition: transform .1s ease-in-out;
 

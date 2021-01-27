@@ -8,19 +8,22 @@
     </p>
   </div>
   <form action="https://app.convertkit.com/forms/1989357/subscriptions" class="newsletter-signup__form" method="post">
-    <div>
-      <label for="newsletterFirstName">First Name</label>
-      <input id="newsletterFirstName" aria-label="First Name" name="fields[first_name]" type="text">
-    </div>
-    <div>
-      <label for="newsletterEmail">Email</label>
-      <input id="newsletterEmail" name="email_address" aria-label="Email Address" required="" type="email">
-    </div>
-    <div class="newsletter-signup__submit-container u-mt1">
-      <button data-element="submit" class="newsletter-signup__submit">
-        <span class="">Join the Newsletter!</span>
-      </button>
-    </div>
+    <p id="newsletterSignupAlert" class="newsletter-signup__alert hide">You're in! Check your email to confirm your subscription.</p>
+    <fieldset id="newsletterSignup">
+      <div>
+        <label for="newsletterFirstName">First Name</label>
+        <input id="newsletterFirstName" aria-label="First Name" name="fields[first_name]" type="text">
+      </div>
+      <div>
+        <label for="newsletterEmail">Email</label>
+        <input id="newsletterEmail" name="email_address" aria-label="Email Address" required="" type="email">
+      </div>
+      <div class="newsletter-signup__submit-container u-mt1">
+        <button data-element="submit" class="newsletter-signup__submit">
+          <span class="">Join the Newsletter!</span>
+        </button>
+      </div>
+    </fieldset>
     <p class="text-small u-align-center u-mt05 u-mb0">I won’t ever spam you. Unsubscribe at any time</p>
   </form>
 </div>
