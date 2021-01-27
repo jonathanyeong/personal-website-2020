@@ -26,10 +26,8 @@ templateClass: tmpl-post
 {% endblock %}
 
 {% block content %}
-  <main id="recentArticles" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
-    <div class="post-container u-pt3 u-pb3">
-      {{ content | safe }}
-    </div>
-    {% include "../partials/newsletter-signup.njk" %}
-  </main>
+  <div class="post-container u-pt3 u-pb3">
+    {{ content | safe }}
+  </div>
+  {% include "../partials/newsletter-signup.njk" %}
 {% endblock %}

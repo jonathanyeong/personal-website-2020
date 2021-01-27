@@ -14,10 +14,10 @@
 }
 
 .tmpl-post {
-  padding: 1rem;
+  padding: 0 1rem 4rem 1rem;
 
   @media (min-width: $md) {
-    padding: 0;
+    padding-bottom: 4rem;
   }
 
   img {
