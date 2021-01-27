@@ -2,6 +2,11 @@
   border: 5px solid var(--primary-color);
   border-radius: 5px;
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+  }
 }
 
 .newsletter-signup__cta,
@@ -18,6 +23,12 @@
 .newsletter-signup__form {
   background-color: var(--white);
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $md) {
+    // So we can vertically center the alert message
+    flex-direction: row;
+  }
 
   label {
     display: block;
