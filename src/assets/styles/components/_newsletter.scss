@@ -17,6 +17,7 @@
 
 .newsletter-signup__form {
   background-color: var(--white);
+  display: flex;
 
   label {
     display: block;
@@ -36,15 +37,31 @@
     border: none;
     padding: 0;
   }
+
+  form {
+    flex: 0 1 100%;
+  }
 }
 
-.newsletter-signup__alert {
+.formkit-alert {
+  align-self: center;
   background: hsl(190, 42%, 65%, 50%);
   border: 1px solid var(--highlight-color);
   border-radius: 3px;
-  padding: 0.6rem;
   color: var(--primary-font-color);
+  list-style: none;
+  padding: 0.6rem;
   text-align: center;
+}
+
+.formkit-alert:empty {
+  display: none;
+}
+
+.formkit-alert-error {
+  background: #fde8e2;
+  border-color: #f2643b;
+  color: #ea4110;
 }
 
 .newsletter-signup__submit-container {
