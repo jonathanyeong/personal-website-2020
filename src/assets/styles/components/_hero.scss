@@ -28,20 +28,18 @@
   width: 100%;
 
   h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    font-family: AvenirLTPro-Heavy;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-family: var(--font-family-heavy);
+  }
+
+  p {
+    color: var(--accessible-highlight-color);
+    font-family: var(--font-family-medium);
+    margin-top: 0;
   }
 
   @media (min-width: $md) {
-    padding: 2.5rem 0;
-
-    h1 {
-      font-size: 3.7rem;
-    }
+    padding: 6rem 0;
   }
-}
-
-.hero-inner__secondary-text {
-  color: var(--highlight-color);
 }

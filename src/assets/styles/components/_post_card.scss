@@ -42,12 +42,11 @@
 }
 
 .post-card__title {
-  font-family: 'AvenirLTPro-Book', system-ui, sans-serif;
   margin-bottom: 0.8rem;
   word-wrap: break-word;
 }
 
 .post-card__read-more {
-  font-family: 'AvenirLTPro-Heavy', system-ui, sans-serif;
+  font-family: var(--font-family-heavy);
   color: var(--link-color);
 }
