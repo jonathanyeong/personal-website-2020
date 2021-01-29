@@ -64,7 +64,6 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/icons");
-  eleventyConfig.addPassthroughCopy("src/assets/styles");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
   eleventyConfig.addPassthroughCopy("src/_redirects");
   /* Markdown Overrides */

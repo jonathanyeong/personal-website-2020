@@ -5,9 +5,9 @@
   "scripts": {
     "clean": "rimraf dist/",
     "watch:eleventy": "eleventy --serve",
-    "watch:sass": "sass --watch src/assets/styles/main.scss:src/assets/styles/main.min.css",
+    "watch:sass": "sass --watch src/assets/styles/main.scss:dist/assets/styles/main.min.css",
     "start": "npm-run-all clean --parallel watch:*",
-    "sass": "sass --style=compressed src/assets/styles/main.scss src/assets/styles/main.min.css",
+    "sass": "sass --style=compressed --no-source-map src/assets/styles/main.scss dist/assets/styles/main.min.css",
     "build": "npm run sass && eleventy",
     "debug": "DEBUG=* eleventy"
   },
