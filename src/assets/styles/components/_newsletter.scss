@@ -103,3 +103,13 @@
     font-family: 'AvenirLTPro-Heavy', system-ui, sans-serif;
   }
 }
+
+.newsletter-signup__recent-issue {
+  color: var(--accent-color);
+  font-family: var(--font-family-medium);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
