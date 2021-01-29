@@ -92,16 +92,16 @@
   height: 2.5rem;
   padding: 0;
   width: 100%;
-  transition: transform .1s ease-in-out;
-
-  &:hover {
-    transform: translate(-2px, -4px);
-  }
+  transition: transform .07s ease-out;
 
   span {
     color: var(--primary-color);
     font-family: var(--font-family-heavy);
   }
+}
+
+.newsletter-signup__submit-container:hover .newsletter-signup__submit {
+  transform: translate(-2px, -4px);
 }
 
 .newsletter-signup__recent-issue {
