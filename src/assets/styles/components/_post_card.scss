@@ -19,15 +19,15 @@
   display: block;
   color: var(--primary-font-color);
   text-decoration: none;
-  transition: transform .2s ease-out;
-
-  &:hover {
-    transform: translate(-10px, -10px);
-  }
+  transition: transform .07s ease-out;
 
   @media (min-width: $md) {
     padding: 1.5rem 1.6rem;
   }
+}
+
+.post-card:hover .post-card__inner {
+  transform: translate(-10px, -10px);
 }
 
 .post-card__excerpt,
