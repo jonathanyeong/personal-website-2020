@@ -21,11 +21,14 @@
 
 .nav-container__logo {
   display: flex;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 1;
 
-  &:hover {
-    opacity: 0.7;
+  .logo-bg {
+    fill: var(--primary-color);
+    transition: fill 0.1s ease-out;
+  }
+
+  &:hover .logo-bg {
+    fill: var(--highlight-color);
   }
 
   svg {
