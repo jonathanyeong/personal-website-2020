@@ -100,13 +100,13 @@
 
   span {
     color: var(--primary-color);
-    font-family: 'AvenirLTPro-Heavy', system-ui, sans-serif;
+    font-family: var(--font-family-heavy);
   }
 }
 
 .newsletter-signup__recent-issue {
-  color: var(--accent-color);
-  font-family: var(--font-family-medium);
+  color: var(--white);
+  font-family: var(--font-family-heavy);
   text-decoration: none;
 
   &:hover {
