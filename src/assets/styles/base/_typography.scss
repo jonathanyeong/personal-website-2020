@@ -54,9 +54,9 @@ small,
 }
 
 .see-more__item {
-  text-decoration: none;
   color: var(--link-color);
-  font-family: 'AvenirLTPro-Heavy', system-ui, sans-serif;
+  font-family: var(--font-family-medium);
+  text-decoration: none;
   text-decoration: underline;
 }
 
