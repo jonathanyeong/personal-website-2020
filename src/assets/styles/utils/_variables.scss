@@ -1,21 +1,32 @@
 :root {
-  --red: #C5004A;
-  --darkred: #7F0036;
+  // Colors
   --lightgray: #F8FAFA;
   --gray: #E5E5E5;
-  --gray700: #96999A;
   --darkgray: #146171;
-  --navy: #17050F;
-  --blue: #082840;
   --white: #fff;
   --primary-color: #16697A;
-  --secondary-color: #F5F2ED;//EDE7E3; //F0E6DA
+  --secondary-color: #F5F2ED;
   --highlight-color: #82C0CC;
   --primary-font-color: #115664;
-  // TODO: Should do some maths here and base everything from 12 column
+  --link-color: #287F95;
+  // Columns
   --twelve-column-width: 60rem;
   --ten-column-width: 48.75rem;
   --eight-column-width: 38.75rem;
   --six-column-width: 30rem;
+  // Z-indexes
   --top-layer: 100;
+  // Font sizes
+  --big-header: 3.815rem;
+  --heading-one: 3.052rem;
+  --heading-two: 2.441rem;
+  --heading-three: 1.953rem;
+  --heading-four: 1.563rem;
+  --heading-five: 1.25rem;
+  --small-text: 0.8rem;
+  --body-text: 1rem;
+  // Font Families
+  --font-family-heavy: 'AvenirLTPro-Heavy', sans-serif, system-ui;
+  --font-family-medium: 'AvenirLTPro-Medium', sans-serif, system-ui;
+  --font-family-light: 'AvenirLTPro-Book', sans-serif, system-ui;
 }

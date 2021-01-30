@@ -18,6 +18,9 @@
 .u-mt0 {
     margin-top: 0 !important;
 }
+.u-mt05 {
+    margin-top: 0.5rem !important;
+}
 .u-mt1 {
     margin-top: 1rem !important;
 }
@@ -62,4 +65,11 @@
 }
 .u-align-right {
     text-align: right !important;
+}
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }

@@ -3,6 +3,7 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const striptags = require("striptags");
@@ -11,6 +12,7 @@ const striptags = require("striptags");
 module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
 
+  eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -26,7 +28,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
   });
 
-  // Get the first `n` elements of a collection.
+  // ******
+  // COLLECTIONS
+  // ******
+
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
       return array.slice(n);
@@ -35,49 +40,31 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", function(collection) {
-    let tagSet = new Set();
-    collection.getAll().forEach(function(item) {
-      if( "tags" in item.data ) {
-        let tags = item.data.tags;
-
-        tags = tags.filter(function(item) {
-          switch(item) {
-            // this list should match the `filter` list in tags.njk
-            case "all":
-            case "nav":
-            case "post":
-            case "posts":
-              return false;
-          }
-
-          return true;
-        });
-
-        for (const tag of tags) {
-          tagSet.add(tag);
-        }
-      }
-    });
-
-    // returning an array in addCollection works in Eleventy 0.5.3
-    return [...tagSet];
-  });
-
   const now = new Date();
   const livePosts = p => p.date <= now && p.data.published;
-
   eleventyConfig.addCollection('posts', collection => {
     return collection.getFilteredByGlob('./src/posts/*.md')
       .filter(livePosts);
   });
+
+  eleventyConfig.addCollection('featuredPosts', collection => {
+    return collection.getFilteredByGlob('./src/posts/*.md')
+      .filter(
+        post => post.data.featured_post && livePosts(post)
+      )
+      .sort((a,b) => {
+        return a.data.post_weight - b.data.post_weight;
+      });
+  });
+
+  // ******
+  // BUILD COMMANDS
+  // ******
   eleventyConfig.addWatchTarget("src/assets/styles/");
 
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/icons");
-  eleventyConfig.addPassthroughCopy("src/assets/styles");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
-
   eleventyConfig.addPassthroughCopy("src/_redirects");
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
@@ -152,7 +139,7 @@ function extractExcerpt(article) {
   const content = article.templateContent;
 
   excerpt = striptags(content)
-    .substring(0, 200) // Cap at 200 characters
+    .substring(0, 250) // Cap at 250 characters
     .replace(/^\s+|\s+$|\s+(?=\s)/g, "")
     .trim()
     .concat("...");

@@ -8,7 +8,8 @@ description: Doing a year end review of 2020. It's been a crazy year and it feel
   a reflection. I want to share my wins, talk about the challenges, and any lessons
   I learned from my experiences. Finally, I want to talk about what I'm looking forward
   to for 2021.
-
+featured_post: false
+post_weight: 3.0
 ---
 It's felt like March for months now, but 2020 is finally coming to a close! Thank you Time Lord for ending this year. Let's get one thing straight, the pandemic sucked. Really sucked. I wish I could use a more vulgar word but I'm trying to keep my writing PG. I'm generally a positive person, but 2020 has definitely tested me. The Rona has caused constant worrying about my family, my situation in the US, and my health. Fortunately, there's light at the end of the tunnel. Even though the virus is still raging, there's a vaccine on the way. And with the hope of a vaccine, comes a chance to breathe. It's given me some headspace to reflect on this crazy year. Because of the pandemic, I'm viewing my achievements and setbacks with a different lens. The small wins don't seem so small. And the setbacks don't seem like that big of a deal. As my last post of the year, I want to share my journey in 2020. I want to celebrate my wins, discuss the challenges, and any lessons I learned from my experiences. Finally, I want talk about what I'm looking forward to for 2021. Let's dive in!
 

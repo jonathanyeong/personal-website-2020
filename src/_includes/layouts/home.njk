@@ -1,4 +1,9 @@
----
-layout: layouts/base.njk
----
-{{ content | safe }}
+{% extends 'layouts/base.njk' %}
+
+{% block header %}
+  {% include '../partials/homepage_header.njk' %}
+{% endblock %}
+
+{% block content %}
+  {{ content | safe }}
+{% endblock %}

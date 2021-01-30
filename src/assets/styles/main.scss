@@ -13,14 +13,15 @@
 @import "base/typography";
 @import "base/code";
 @import "base/utilities";
+@import "base/a11y";
 //--------------------
 // COMPONENTS
 // partials with local scope to a component
 //--------------------
 @import "components/navigation";
-@import "components/post_list";
+@import "components/post_card";
 @import "components/hero";
 @import "components/footer";
-@import "components/mailchimp";
+@import "components/newsletter";
 @import "components/buttons";
 @import "components/post";

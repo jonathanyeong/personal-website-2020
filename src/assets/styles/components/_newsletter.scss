@@ -1,0 +1,115 @@
+.newsletter-signup {
+  border: 5px solid var(--primary-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $md) {
+    flex-direction: row;
+  }
+}
+
+.newsletter-signup__cta,
+.newsletter-signup__form {
+  flex: 0 1 50%;
+  padding: 2.2rem 1.6rem;
+}
+
+.newsletter-signup__cta {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.newsletter-signup__form {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $md) {
+    // So we can vertically center the alert message
+    flex-direction: row;
+  }
+
+  label {
+    display: block;
+    font-family: 'AvenirLTPro-Heavy', system-ui, sans-serif;
+  }
+
+  input {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 2.2rem;
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  form {
+    flex: 0 1 100%;
+  }
+}
+
+.formkit-alert {
+  align-self: center;
+  background: hsl(190, 42%, 65%, 50%);
+  border: 1px solid var(--highlight-color);
+  border-radius: 3px;
+  color: var(--primary-font-color);
+  list-style: none;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.formkit-alert:empty {
+  display: none;
+}
+
+.formkit-alert-error {
+  background: #fde8e2;
+  border-color: #f2643b;
+  color: #ea4110;
+}
+
+.newsletter-signup__submit-container {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, .12);
+  border-radius: 5px;
+  background-color: var(--highlight-color);
+  position: relative;
+}
+
+.newsletter-signup__submit {
+  background: var(--white);
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0;
+  width: 100%;
+  transition: transform .07s ease-out;
+
+  span {
+    color: var(--primary-color);
+    font-family: var(--font-family-heavy);
+  }
+}
+
+.newsletter-signup__submit-container:hover .newsletter-signup__submit {
+  transform: translate(-2px, -4px);
+}
+
+.newsletter-signup__recent-issue {
+  color: var(--white);
+  font-family: var(--font-family-heavy);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

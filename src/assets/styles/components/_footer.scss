@@ -4,6 +4,10 @@
 
   p {
     font-size: 1rem;
+
+    span {
+      color: var(--highlight-color);
+    }
   }
 }
 
@@ -30,12 +34,9 @@
     text-decoration: none;
     padding: 0 0.3rem;
     margin: 0 0.3rem;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
 
-    &:hover {
-      opacity: 0.6;
-
+    &:hover svg {
+      fill: var(--highlight-color);
     }
   }
 
@@ -43,11 +44,16 @@
     fill: var(--primary-color);
     width: 23px;
     height: 23px;
+    transition: fill 0.07s ease-out;
   }
 
   @media (min-width: $md) {
     justify-content: flex-start;
   }
+}
+
+.icon-twitter svg {
+  width: 20px;
 }
 
 .footer__mailchimp {

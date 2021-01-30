@@ -1,20 +1,20 @@
 {
-  "title": "Jonathan Yeong",
-  "url": "https://www.jonathanyeong.com/",
-  "description": "A software engineer based in Seattle. I write about web technology and my dev journey.",
+  "title": "Jonathan Yeong's Blog",
+  "url": "https://jonathanyeong.com/",
+  "description": "Hi, I'm Jonathan. This blog is where I’ll share what I’m learning. With a focus on Elixir, Javascript, and Developer growth.",
   "feed": {
-    "subtitle": "A software engineer based in Seattle. I write about web technology and my dev journey.",
+    "subtitle": "This blog is where I’ll share what I’m learning. With a focus on Elixir, Javascript, and Developer growth.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://www.jonathanyeong.com/"
+    "id": "https://jonathanyeong.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://www.jonathanyeong.com/feed/feed.json"
+    "url": "https://jonathanyeong.com/feed/feed.json"
   },
   "author": {
     "name": "Jonathan Yeong",
     "email": "hello@jonathanyeong.com",
-    "url": "https://www.jonathanyeong.com/about-me/"
+    "url": "https://jonathanyeong.com/pages/about/"
   }
 }

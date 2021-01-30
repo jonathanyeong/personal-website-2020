@@ -17,7 +17,7 @@ templateClass: tmpl-post-list
 {% endblock %}
 
 {% block content %}
-{% set showYear = false %}
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+  {% set showYear = false %}
+  {% set postslist = collections.posts %}
+  {% include "partials/postslist.njk" %}
 {% endblock %}
