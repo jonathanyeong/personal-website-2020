@@ -24,8 +24,14 @@
   color: var(--primary-color);
   max-width: var(--ten-column-width);
   margin: 0 auto;
-  padding: 0.8rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
   width: 100%;
+
+  @media (min-width: $md) {
+    padding: 6rem 0;
+    text-align: center;
+  }
 
   h1 {
     letter-spacing: 1px;
@@ -50,10 +56,5 @@
         display: block;
       }
     }
-  }
-
-  @media (min-width: $md) {
-    padding: 6rem 0;
-    text-align: center;
   }
 }
