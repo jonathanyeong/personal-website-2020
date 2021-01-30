@@ -27,10 +27,6 @@
   padding: 0.8rem 0;
   width: 100%;
 
-  @media (min-width: $md) {
-    text-align: center;
-  }
-
   h1 {
     letter-spacing: 1px;
     margin-bottom: 1rem;
@@ -46,9 +42,18 @@
     color: var(--primary-color);
     font-family: var(--font-family-medium);
     margin-top: 0;
+
+    br {
+      display: none;
+
+      @media (min-width: $md) {
+        display: block;
+      }
+    }
   }
 
   @media (min-width: $md) {
     padding: 6rem 0;
+    text-align: center;
   }
 }
