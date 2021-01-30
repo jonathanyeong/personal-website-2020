@@ -24,7 +24,10 @@
   <body>
     <div class="nav-container">
       <nav>
-        <a href="{{ '/' | url }}" class="nav-container__logo">{% include '../../assets/icons/logo.svg' %}</a>
+        <a href="{{ '/' | url }}" class="nav-container__logo">
+          <span class="visually-hidden">Logo</span>
+          {% include '../../assets/icons/logo.svg' %}
+        </a>
         <ul class="nav">
         {%- for entry in collections.all | eleventyNavigation %}
           <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
