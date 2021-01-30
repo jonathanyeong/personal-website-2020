@@ -35,7 +35,7 @@
     letter-spacing: 1px;
     margin-bottom: 1rem;
     font-family: var(--font-family-heavy);
-    font-size: var(--heading-three);
+    font-size: var(--heading-two);
 
     @media (min-width: $md) {
       font-size: var(--heading-one);
@@ -45,12 +45,7 @@
   p {
     color: var(--primary-color);
     font-family: var(--font-family-medium);
-    font-size: var(--body-text);
     margin-top: 0;
-
-    @media (min-width: $md) {
-      font-size: var(--heading-five);
-    }
   }
 
   @media (min-width: $md) {
