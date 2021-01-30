@@ -3,9 +3,9 @@
     <time class="post-card__date text_small" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     <h2 class="post-card__title h4">
       {{ post.data.title }}
-    </h1>
-    <span class="post-card__excerpt">
+    </h2>
+    <div class="post-card__excerpt">
       {% excerpt post %} <span class="post-card__read-more">Read More</span>
-    </span>
+    </div>
   </a>
 </article>
