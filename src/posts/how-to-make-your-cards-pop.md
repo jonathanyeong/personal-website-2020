@@ -13,11 +13,11 @@ In this tutorial, I want to show you how to make your cards pop out on hover usi
 Here's the code, and a [codepen](https://codepen.io/jonathanyeong/pen/XWNWvZN). For an explanation of how everything works, read on!
 
 The HTML:
-```
+```html
 <article class="card-outer">
-   <a href="#" class="card-inner">
-      Hello World!
-   </a>
+  <a href="#" class="card-inner">
+    Hello World!
+  </a>
 </article>
 ```
 
