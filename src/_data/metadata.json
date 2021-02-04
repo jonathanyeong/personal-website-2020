@@ -1,12 +1,12 @@
 {
   "title": "Jonathan Yeong's Blog",
-  "url": "https://jonathanyeong.com/",
+  "url": "https://www.jonathanyeong.com/",
   "description": "Hi, I'm Jonathan. This blog is where I’ll share what I’m learning. With a focus on Elixir, Javascript, and Developer growth.",
   "feed": {
     "subtitle": "This blog is where I’ll share what I’m learning. With a focus on Elixir, Javascript, and Developer growth.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://jonathanyeong.com/"
+    "id": "https://www.jonathanyeong.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
@@ -15,6 +15,6 @@
   "author": {
     "name": "Jonathan Yeong",
     "email": "hello@jonathanyeong.com",
-    "url": "https://jonathanyeong.com/pages/about/"
+    "url": "https://www.jonathanyeong.com/about/"
   }
 }
