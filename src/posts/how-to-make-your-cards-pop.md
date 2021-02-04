@@ -1,9 +1,9 @@
 ---
-date: 
+date: 2021-02-04T00:00:00-08:00
 title: How to make your cards pop!
-published: false
-cover_image: ''
-description: ''
+published: true
+cover_image: https://res.cloudinary.com/jonathan-yeong/image/upload/v1612449627/personal-blog/cover_images/how_to_make_your_cards_pop_jwcvpq.png
+description: A tutorial to show how to add a pop up hover effect using only CSS.
 
 ---
 In this tutorial, I want to show you how to make your cards pop out on hover using only CSS. This effect looks like this:
