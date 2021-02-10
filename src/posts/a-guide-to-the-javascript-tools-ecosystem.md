@@ -1,5 +1,5 @@
 ---
-date: 2021-01-21T00:00:00-08:00
+date: 2021-01-21T00:00:00.000-08:00
 title: A guide to the Javascript tools ecosystem
 published: true
 cover_image: https://res.cloudinary.com/jonathan-yeong/image/upload/v1611244940/personal-blog/cover_images/a-guide-to-js-tooling-ecosystem_dlbaid.png
@@ -7,7 +7,8 @@ description: This post is a guide to the Javascript tool ecosystem. I look at th
   tools out there, try to define some of the features that they have, and talk about
   what I would choose for my next project.
 featured_post: true
-post_weight: 3.0
+post_weight: "3"
+
 ---
 I'm relatively new to the Javascript (JS) tooling ecosystem and it's... overwhelming. There seem to be many tools that solve the same problem. Sure there are tools more popular than others, and maybe some industry-standard tools. For example, Webpack is the default module bundler for Rails. But I still want to figure out if these defacto tools are the best choice. This post will explore the types of tools out there, the features they have, and then my pick on what tool to use. I'll update this post as I gather more information or if anything changes!
 
@@ -99,7 +100,6 @@ form.addEventListener("submit", e => {
 });
 ```
 
-
 ### Hot module replacement (HMR)
 
 Both Parcel and Webpack support hot module replacement as an opt-in feature. This feature is a way to improve the developer experience. Let's take a look at a world without it. Imagine we have a large application where the bundle size is large - even with code splitting and tree shaking. After making a change in development and saving the file, the entire bundle gets rebuilt and you have to refresh the page to pull in the new changes. With HMR only the modules that are changed will be reloaded. HMR is a way to develop faster and allows you to maintain the state of the page.
@@ -114,6 +114,7 @@ Module bundlers are great for production since they will build an optimized JS f
 
 * [Snowpack](https://www.snowpack.dev/)
 * [Vite](https://vitejs.dev/)
+* [Preactjs/wmr](https://github.com/preactjs/wmr)
 
 A no module bundler is a tool that leverages ESM imports to pull in the files needed during development. But it does so without bundling them together. Here's how they work; when you first start up the dev server the tool will build all your files and then cache them. Now when you edit a file it will invalidate that cache and rebuilds only that file. This process is leagues faster than bundling your entire application and then serving the code.
 
