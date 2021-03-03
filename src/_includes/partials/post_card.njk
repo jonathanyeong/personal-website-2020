@@ -1,6 +1,7 @@
 <article class="post-card u-mb1">
   <a href="{{ post.url | url }}" class="post-card__inner">
     <time class="post-card__date text_small" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    <span>{{ post.data.tags }}</span>
     <h2 class="post-card__title h4">
       {{ post.data.title }}
     </h2>
