@@ -13,7 +13,6 @@
 
 .post-card__inner {
   border-radius: 5px;
-  background: var(--white);
   border: 2px solid var(--primary-color);
   padding: 1rem 1rem;
   display: block;
@@ -30,13 +29,12 @@
   transform: translate(-10px, -10px);
 }
 
-.post-card__excerpt,
-.post-card__date {
+.post-card__excerpt {
   display: block;
   word-wrap: break-word;
 }
 
-.post-card__date {
+.post-card__info {
   margin-bottom: 0.3rem;
   word-spacing: -0.5px;
 }
@@ -44,6 +42,19 @@
 .post-card__title {
   margin-bottom: 0.8rem;
   word-wrap: break-word;
+  z-index: 11;
+
+  &:after {
+    background: var(--white);
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
 
 .post-card__read-more {

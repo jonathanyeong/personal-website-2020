@@ -1,12 +1,28 @@
-<article class="post-card u-mb1">
-  <a href="{{ post.url | url }}" class="post-card__inner">
+<article class="post-card u-mb1" aria-label="{{ post.data.title }}">
+  <p class="post-card__info">
     <time class="post-card__date text_small" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    <span>{{ post.data.tags }}</span>
-    <h2 class="post-card__title h4">
-      {{ post.data.title }}
-    </h2>
-    <div class="post-card__excerpt">
-      {% excerpt post %} <span class="post-card__read-more">Read More</span>
-    </div>
+    |
+    {% for tag in post.data.tags %}
+      {%- if collections.tagList.indexOf(tag) != -1 -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" class="post-card__tag">#{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+  </p>
+
+
+  <a href="{{ post.url | url }}" class="post-card__title h4">
+    {{ post.data.title }}
   </a>
+
+  <p class="post-card__excerpt">
+    {% excerpt post %} <span class="post-card__read-more">Read More</span>
+  </p>
 </article>
+
+
+{#
+  <a href="{{ post.url | url }}" class="post-card__inner">
+
+
+  </a> #}
