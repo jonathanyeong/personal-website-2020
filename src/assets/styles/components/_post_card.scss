@@ -12,11 +12,13 @@
 }
 
 .post-card__inner {
+  background: var(--white);
   border-radius: 5px;
   border: 2px solid var(--primary-color);
   padding: 1rem 1rem;
   display: block;
   color: var(--primary-font-color);
+  position: relative;
   text-decoration: none;
   transition: transform .07s ease-out;
 
@@ -39,15 +41,19 @@
   word-spacing: -0.5px;
 }
 
+.post-card__tag {
+  position: relative;
+  z-index: 20;
+}
+
 .post-card__title {
+  color: var(--primary-font-color);
+  text-decoration: none;
   margin-bottom: 0.8rem;
   word-wrap: break-word;
-  z-index: 11;
 
   &:after {
-    background: var(--white);
     content: "";
-
     position: absolute;
     top: 0;
     right: 0;
