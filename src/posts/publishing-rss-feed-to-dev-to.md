@@ -3,6 +3,8 @@ date: 2020-06-19
 # hero: "/uploads/publishing-to-rss-feed-to-dev-to-1.png"
 title: "Publishing RSS feed to Dev.to"
 published: true
+tags:
+- tutorial
 ---
 I enjoy publishing to [Dev.to](http://dev.to/). It has some significant features that my site doesn't have, like commenting (I'm working on it!). In the past, I copied and pasted posts from my site to Devto. This process was not ideal and really bad for SEO to my site. Thankfully there's a handy feature that lets you publish from RSS in Devto (found in settings → Publishing from RSS). In this tutorial, I'll show how I got this feature working with my Hugo RSS feed.
 

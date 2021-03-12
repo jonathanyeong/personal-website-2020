@@ -4,7 +4,8 @@ title: Lessons from my first conference talk
 description: 'Now that I''ve had some time to process my thoughts. I''ve come up with
   some lessons learnt from my first conference talk. '
 published: true
-
+tags:
+- recap
 ---
 Elixir conference happened earlier this month, and like all conferences this year, it was virtual. I wanted to give a huge shoutout to the organizers! Even though it was a virtual conference, they were able to deliver on a great conference experience. This conference is a special one for me because it was my first time attending an Elixir conf. And it was the first time I ever gave a conference talk. The talk I gave was a [deep dive into Elixir](https://2020.elixirconf.com/speakers/111/talk). Specifically, I chose to dive into how the pipe operator worked. It was an awesome learning experience. And now that I've had some time to process my thoughts, I wanted to share my takeaways.
 

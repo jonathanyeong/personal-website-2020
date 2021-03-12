@@ -2,6 +2,9 @@
 date: 2019-09-12
 title: "Building the Ruby Proto Compiler gem"
 published: true
+tags:
+- tutorial
+- ruby
 ---
 [Protocol Buffers](https://developers.google.com/protocol-buffers/) (Protobufs) are a great way to pass information between your apps. Written by Google, Protobufs give you the readability of JSON but the structure of something like XML. Using the `protoc` tool you can compile the Protobufs into a language of your choosing.
 

@@ -4,7 +4,8 @@ title: Hacktoberfest 2020 Recap
 description: A recap of my first Hacktoberfest experience. What I appreciated most,
   what surprised me, and the lesson learnt.
 published: true
-
+tags:
+- recap
 ---
 Hacktoberfest is done and dusted and I wanted to do a quick recap on my experience. Reflecting on this month has helped me appreciate the hard work maintainers put into their projects. I've also found myself surprised by the open source world, and I've learnt a big lesson along the way. In the end, I created five pull requests (PRs) over four projects. Only three of those PRs were counted towards Hacktoberfest. One was pending, and the other occurred during the opt-in transition. While I'm a little sad I didn't complete, I'm mostly happy that I was able to contribute at all. First off, I wanted to share what I appreciated the most when working on my open source contributions.
 
