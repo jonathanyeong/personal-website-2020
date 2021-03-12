@@ -15,6 +15,11 @@ eleventyComputed:
 permalink: /{{ tag }}/
 templateClass: tmpl-post-list
 ---
+{#
+  The tags file does not link to /tags/. I don't want to show a list of all tags.
+  Only that you can view posts grouped under a tag.
+ #}
+
 {% extends 'layouts/base.njk' %}
 
 {% block header %}
