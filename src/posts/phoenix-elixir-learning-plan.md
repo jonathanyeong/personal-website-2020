@@ -4,6 +4,10 @@ title: "Phoenix & Elixir Learning Plan"
 published: true
 featured_post: true
 post_weight: 2.0
+tags:
+  - learning
+  - elixir
+  - phoenix
 ---
 **Updated: July 17, 2020 - Added another resource**
 

@@ -2,6 +2,10 @@
 date: 2020-07-02
 title: "Elixir & Phoenix: Phase 1 updates"
 published: true
+tags:
+- learning
+- phoenix
+- elixir
 ---
 Last week I wrote up a [learning plan](https://www.jonathanyeong.com/posts/phoenix-elixir-learning-plan/) for Phoenix & Elixir. In this post, I wanted to add an addendum to phase 1 of the plan and give a quick progress update.
 

@@ -1,0 +1,37 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+eleventyComputed:
+  title: Jonathan Yeong | {{ tag }} articles
+permalink: /{{ tag }}/
+templateClass: tmpl-post-list
+---
+{#
+  The tags file does not link to /tags/. I don't want to show a list of all tags.
+  Only that you can view posts grouped under a tag.
+ #}
+
+{% extends 'layouts/base.njk' %}
+
+{% block header %}
+<div class="tmpl-post hero">
+  <div class="hero-inner">
+    <h1 class="u-mt4 u-mb4">{{ tag | capitalize }}</h1>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  {% set showYear = false %}
+  {% set postslist = collections[ tag ] %}
+  {% include "partials/postslist.njk" %}
+{% endblock %}

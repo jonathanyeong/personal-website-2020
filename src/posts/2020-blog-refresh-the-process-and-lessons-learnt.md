@@ -4,7 +4,8 @@ title: '2020 blog refresh: the process and lessons learnt'
 description: The process and the lessons learnt after doing a redesign of my blog.
   During this redesign I also migrated from Hugo to 11ty.
 published: true
-
+tags:
+- recap
 ---
 Welcome to my brand new website! I'm stoked that I can finally share it with people. I rushed a little towards the end to get it released. But I'm happy with how it all turned out. Along with a new design, I'm also using a new static site generator. I migrated from [Hugo](https://gohugo.io/) to [Eleventy](https://www.11ty.dev/) (11ty). The project was about two months in the making from design to production. I learnt a few lessons along the way. Let's dive into the details, and the lessons learnt.
 

@@ -2,6 +2,9 @@
 date: 2017-01-04
 title: "Setting Up RSpec and FactoryGirl"
 published: true
+tags:
+- tutorial
+- rspec
 ---
 Not another RSpec tutorial! I know, there’s plenty of well written tutorials out there. But, thankfully, this is only a cheat sheet. The article below outlines the steps to get RSpec and Factory girl set up in your Rails app. If you want a TL;DR, follow the code snippets and skip all the text.
 

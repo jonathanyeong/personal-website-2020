@@ -2,6 +2,8 @@
 date: 2020-06-20
 title: "First impressions of Phoenix Framework"
 published: true
+tags:
+- phoenix
 ---
 I've wanted to try out Phoenix ever since I heard the Changelog built their site on it. Yes, I'm very late to the party, version 1.0 of Phoenix, released in 2015. Thankfully I've found some time away from constant rewrites of this blog to dive into the framework. From what I've heard, if you're a Ruby on Rails developer, you should feel right at home with Phoenix. The first thing I did was to watch their [video on building a Twitter clone](https://www.youtube.com/watch?v=MZvmYaFkNJI&feature=youtu.be). With my excitement level high, I dove into the framework and have spent all week playing around with it. Here are my first impressions.
 

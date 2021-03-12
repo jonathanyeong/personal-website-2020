@@ -4,7 +4,9 @@ title: My first 3 months with Elixir
 description: I've been learning Elixir on the side for the past 3 months. Here is
   the plan I've roughly followed. And my learning process.
 published: true
-
+tags:
+- elixir
+- recap
 ---
 I've been learning Elixir as a side project for the past few months. And I wanted to share my process and the rough learning plan I've been following. Before we dive in, I wanted to give some context on my journey so far. As much as I want to, I'm not using Elixir at work. Meaning I haven't built a production-ready Elixir app. Luckily I had to prep for a conference talk on a [deep dive into the pipe operator](https://www.jonathanyeong.com/posts/lessons-from-my-first-conference-talk/ "Lessons from first conference talk"). Having that as a motivator helped push me to learn more. Since the conference, I've continued on my Elixir journey by following the learning plan below.
 
