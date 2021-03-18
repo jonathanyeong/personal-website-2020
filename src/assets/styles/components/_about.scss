@@ -1,0 +1,27 @@
+.about__image--container {
+  background-color: var(--highlight-color);
+  border-radius: 5px;
+  float: right;
+  margin-bottom: 1rem;
+  @media (min-width: $md) {
+    margin-left: 1rem;
+    width: 30%;
+  }
+
+  .about__image {
+    border-radius: 5px;
+    transform: translate(-10px, -10px);
+  }
+}
+
+.tmpl-post.hero.about__header {
+  padding: 0 1rem;
+  height: 40vh;
+
+  .hero-inner {
+    // margin: 0 1rem;
+    @media (min-width: $md) {
+      max-width: 30%;
+    }
+  }
+}

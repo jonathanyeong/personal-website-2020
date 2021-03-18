@@ -40,12 +40,3 @@ hr {
   border-style: solid;
   border-color: var(--gray);
 }
-
-.tmpl-about-container {
-  display: grid;
-  grid-gap: 1rem;
-
-  @media (min-width: $md) {
-    grid-template-columns: 30% 70%;
-  }
-}

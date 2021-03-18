@@ -1,41 +1,38 @@
 ---
-layout: layouts/post.njk
-title: About Me
+title: About
 templateClass: tmpl-post
 eleventyNavigation:
   key: About
   order: 3
 ---
+{% extends 'layouts/base.njk' %}
 
-<div class="tmpl-about-container">
-  <div class="col-1">
-    <img src="https://res.cloudinary.com/jonathan-yeong/image/upload/v1596067022/personal-blog/profile_pic_alznjm.jpg" alt="jonathan yeong" />
-  </div>
-  <div class="col-2">
-    <p>
-      Senior software engineer currently based in Seattle, WA, originally from Sydney, Australia. My developer journey started in 2014 as an iOS developer, but soon after, I found Ruby on Rails. Since then, I've built apps with Golang and scratched the surface with Clojure and Elixir. I love architecting solutions to technical challenges, exploring new languages and frameworks, and mentoring others.
-    </p>
-
-    <h2>Talks</h2>
-
-    <ul>
-      <li>
-        Deep dive into Elixir | ElixirConf 2020 -
-          <a href="https://www.youtube.com/watch?v=iNbqpT0elbA">Talk</a>
-          <a href="https://speakerdeck.com/jonoyeong/deep-dive-into-elixir">Slides</a>
-      </li>
-      <li>
-        Things I need to know about security -
-        <a href="https://speakerdeck.com/jonoyeong/things-i-need-to-know-about-security">Slides</a>
-      </li>
-    </ul>
-
-    <h2>Connect with me</h2>
-    <ul>
-      <li>Email: <a href="mailto:hello@jonathanyeong.com">hello@jonathanyeong.com</a></li>
-      <li>Twitter: <a href="https://twitter.com/jonoyeong">@jonoyeong</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/jonathan-yeong/">jonathanyeong</a></li>
-    </ul>
+{% block header %}
+<div class="tmpl-post hero about__header">
+  <div class="hero-inner">
+    <h1 class="u-mt2 u-mb2">{{ title }}</h1>
   </div>
 </div>
+{% endblock %}
 
+{% block content %}
+<div class="tmpl-about-container u-pt3">
+  <h1 class="h2">Hi there!</h1>
+  <div class="about__image--container">
+    <img src="https://res.cloudinary.com/jonathan-yeong/image/upload/v1596067022/personal-blog/profile_pic_alznjm.jpg" alt="jonathan yeong" class="about__image"/>
+  </div>
+  <p>
+    My name is Jonathan, I'm a software engineer originally from Australia, currently based in the United States.
+  </p>
+  <p>
+    My web development career started with Ruby and Ruby on Rails. Previously, I was an iOS developer, and learning Ruby/Rails made me appreciate the focus on developer experience. The time it took to get a web app up and running blew my mind! But I quickly succumbed to the flexibility and lack of guard rails (heh). I remember for one of my early projects, I leaned into nested resources. Maybe a little too hard. The app became incredibly hard to debug and eventually I abandoned it and started again.
+  </p>
+  <p>
+    Since that time, I worked at a digital agency, freelanced, and moved to the US to work at a fin-tech company. Most recently I worked at Highspot, a sales enablement startup. I strive to deliver maintainable solutions to products at scale. I love mentoring and contributing to the growth of the team around me.
+  </p>
+  <p>
+    This website is where I'll write about Elixir, Ruby, JavaScript, and other thoughts on web development. I also have a newsletter and a YouTube channel where I dive into developer growth and processes.
+  </p>
+</div>
+
+{% endblock %}
