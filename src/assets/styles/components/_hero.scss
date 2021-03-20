@@ -57,4 +57,10 @@
       }
     }
   }
+
+  .name-highlight {
+    display: inline-block;
+    border-bottom: 3px solid var(--accent-color);
+    line-height: calc(var(--heading-one) - 0.5rem);
+  }
 }

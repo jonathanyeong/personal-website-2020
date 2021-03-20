@@ -6,6 +6,7 @@ Refresh of my website in 2020. This blog is generated from [eleventy-base-blog](
 ## Features
 - Sass support
 - Forestry.io support
+- Icons from [HeroIcons](https://heroicons.com/).
 
 ## Deploy
 This site is deployed to Netlify. Running the npm build task generates a `dist` folder. This is the published folder to Netlify (see `netlify.toml`).
