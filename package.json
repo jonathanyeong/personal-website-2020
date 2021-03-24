@@ -9,8 +9,7 @@
     "watch:postcss": "NODE_ENV=development postcss src/assets/styles/tailwind.css --o dist/assets/styles/style.css --watch",
     "start": "npm-run-all clean --parallel watch:*",
     "sass": "sass --style=compressed --no-source-map src/assets/styles/main.scss dist/assets/styles/main.min.css",
-    "build": "npm run sass && eleventy",
-    "debug": "DEBUG=* eleventy"
+    "build": "npm run sass && ELEVENTY_ENV=production eleventy && NODE_ENV=production postcss src/assets/styles/tailwind.css --o dist/assets/styles/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -34,6 +33,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@tailwindcss/jit": "^0.1.7",
     "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.10",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
