@@ -51,7 +51,11 @@
     </main>
 
     <footer class="footer u-pt5 u-pb2">
-      {% Button 'This is a button' %}
+      {% if myProject.environment == "production" %}
+        {% Button 'This is Production' %}
+      {% else %}
+        {% Button 'This is a Button' %}
+      {% endif %}
       <div class="footer__container">
         <div class="footer__social-shares">
           <div class="footer__social-share-icons">
