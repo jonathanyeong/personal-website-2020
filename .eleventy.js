@@ -7,10 +7,16 @@ const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const striptags = require("striptags");
+const componentsDir = `src/_includes/components`;
+
+// Components
+const Button = require(`./${componentsDir}/Button.js`);
+
 
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
+  eleventyConfig.addShortcode('Button', Button);
 
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
