@@ -1,3 +1,4 @@
 {% for post in postslist | reverse %}
+  {% Card post %}
   {% include "./post_card.njk" %}
 {% endfor %}
