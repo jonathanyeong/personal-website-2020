@@ -9,11 +9,13 @@ pagination:
     - post
     - posts
     - tagList
+    - featuredPosts
   addAllPagesToCollections: true
 eleventyComputed:
   title: Jonathan Yeong | {{ tag }} articles
 permalink: /{{ tag }}/
 templateClass: tmpl-post-list
+canonical: true
 ---
 {#
   The tags file does not link to /tags/. I don't want to show a list of all tags.
