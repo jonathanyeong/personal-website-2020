@@ -7,11 +7,18 @@ const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const striptags = require("striptags");
+const componentsDir = `src/_includes/components`;
+
+// Components
+const Button = require(`./${componentsDir}/Button.js`);
+const Card = require(`./${componentsDir}/Card.js`);
+
 
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
-
+  eleventyConfig.addShortcode('Button', Button);
+  eleventyConfig.addShortcode('Card', Card);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -90,6 +97,7 @@ module.exports = function(eleventyConfig) {
   // BUILD COMMANDS
   // ******
   eleventyConfig.addWatchTarget("src/assets/styles/");
+  eleventyConfig.addWatchTarget("src/_includes/components");
 
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/icons");

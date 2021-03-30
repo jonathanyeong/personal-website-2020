@@ -12,6 +12,11 @@
     <link rel="preload" as="font" href="{{ '/assets/fonts/AvenirLTPro-Heavy/font.woff2' | url}}" type="font/woff2" crossorigin>
     <link rel="preload" as="font" href="{{ '/assets/fonts/AvenirLTPro-Medium/font.woff2' | url}}" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ '/assets/styles/main.min.css' | url }}">
+    {% if myProject.environment == "production" %}
+      <link rel="stylesheet" href="{{ '/assets/styles/style.min.css' | url }}">
+    {% else %}
+      <link rel="stylesheet" href="{{ '/assets/styles/style.css' | url }}">
+    {% endif %}
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
     <link rel="icon" type="image/ico" sizes="32x32" href="{{ "/assets/images/favicon.ico" | url }}">
@@ -50,6 +55,11 @@
     </main>
 
     <footer class="footer u-pt5 u-pb2">
+      {% if myProject.environment == "production" %}
+        {% Button 'This is Production' %}
+      {% else %}
+        {% Button 'This is a Button' %}
+      {% endif %}
       <div class="footer__container">
         <div class="footer__social-shares">
           <div class="footer__social-share-icons">

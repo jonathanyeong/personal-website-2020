@@ -6,10 +6,10 @@
     "clean": "rimraf dist/",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "sass --watch src/assets/styles/main.scss:dist/assets/styles/main.min.css",
+    "watch:postcss": "NODE_ENV=development postcss src/assets/styles/tailwind.css --o dist/assets/styles/style.css --watch",
     "start": "npm-run-all clean --parallel watch:*",
     "sass": "sass --style=compressed --no-source-map src/assets/styles/main.scss dist/assets/styles/main.min.css",
-    "build": "npm run sass && eleventy",
-    "debug": "DEBUG=* eleventy"
+    "build": "npm run sass && ELEVENTY_ENV=production eleventy && NODE_ENV=production postcss src/assets/styles/tailwind.css --o dist/assets/styles/style.min.css"
   },
   "repository": {
     "type": "git",
@@ -26,16 +26,22 @@
   },
   "homepage": "https://github.com/jonathanyeong/personal-website-2020#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-inclusive-language": "^1.0.0",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@tailwindcss/jit": "^0.1.7",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.10",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^2.7.1"
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "rimraf": "^2.7.1",
+    "tailwindcss": "^2.0.4"
   },
   "dependencies": {
     "sass": "^1.26.10",
