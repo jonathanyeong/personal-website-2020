@@ -9,20 +9,22 @@ description: Tailwind has announced the beta release of the Tailwind JIT compile
   an 11ty project.
 
 ---
-# Running Tailwind JIT compiler in 11ty
 Tailwind is getting a [Just In Time (JIT) compiler](https://github.com/tailwindlabs/tailwindcss-jit "Tailwind JIT")! The Tailwind JIT compiler will generate your styles during run-time as you add classes to your templates. That means our CSS files only contains the styles we need. Also, the build times are fast and the development CSS matches production. The JIT compiler is in beta, but other than the [known limitations](https://github.com/tailwindlabs/tailwindcss-jit#known-limitations "Tailwind JIT: Known limitations"), it looks ready to use! Let’s get it working with an 11ty project.
 
 Getting Tailwind JIT working with 11ty is very similar to a standard Tailwind setup. In this post, I’ll do a full tutorial on getting a Tailwind JIT + 11ty application up and running. I’ll also show the steps needed to minimize the css for production. If you want to jump straight to the full solution, here’s the [github repo](https://github.com/jonathanyeong/eleventy-tailwind-site "Tailwind JIT + 11ty github repo").
 
 Versions used:
-- 11ty (0.12.1)
-- Tailwind JIT (0.1.17)
+
+* 11ty (0.12.1)
+* Tailwind JIT (0.1.17)
 
 ## Setting up the application
+
 We’re going to do some boilerplate-y things to get everything set up. If you already have an 11ty project up and running, feel free to skip these steps.
 
 ### Creating the application folders
-Let’s create a new folder `eleventy-tailwind-blog`, go into the folder, and add a `package.json` file to it. The `-y` flag on `npm init` skips the questionnaire. 
+
+Let’s create a new folder `eleventy-tailwind-blog`, go into the folder, and add a `package.json` file to it. The `-y` flag on `npm init` skips the questionnaire.
 
 ```bash
 mkdir eleventy-tailwind-blog
@@ -39,6 +41,7 @@ mkdir src
 ```
 
 ### Setting up the configuration and html
+
 Create an `.eleventy.js` file at the top level folder, `eleventy-tailwind-blog`. This file is where all the 11ty configuration lives. There’s a lot of sensible defaults that 11ty provides, so for now we’ll just tell 11ty where our files live (`src/`) and what the output directory (`dist/`) should be. 11ty will generate the output folder for us.
 
 ```js
@@ -78,7 +81,8 @@ Next, inside your `src` folder, add an `index.njk` file, and add the boilerplate
 The boilerplate code doesn’t have any styling. I included some Tailwind classes that we’ll see in action after we set up Tailwind. But first, let’s get everything up and running.
 
 ### Getting up and running
-Update the `“scripts”` section in your `package.json` with a `start` and `build` command. These commands will allow us to run 11ty in dev and build in production, respectively. 
+
+Update the `“scripts”` section in your `package.json` with a `start` and `build` command. These commands will allow us to run 11ty in dev and build in production, respectively.
 
 ```bash
 ...
@@ -99,10 +103,12 @@ Navigate to localhost:8080 and you should see our unstyled, and pretty boring, p
 ![](Screen%20Shot%202021-03-28%20at%2012.03.49%20pm.png "Unstyled 11ty page using nunjucks template")
 
 ## Getting Tailwind JIT installed
+
 Now for the fun part! Let’s get Tailwind JIT installed and transform the plain old HTML page into something a little prettier!
 
 ### Install TailwindJIT and supporting packages
-Next, we need to install the Tailwind JIT and supporting packages as dev dependencies. The command below is pulled from the [Tailwind JIT github](https://github.com/tailwindlabs/tailwindcss-jit "Tailwind JIT - GIthub"). 
+
+Next, we need to install the Tailwind JIT and supporting packages as dev dependencies. The command below is pulled from the [Tailwind JIT github](https://github.com/tailwindlabs/tailwindcss-jit "Tailwind JIT - GIthub").
 
 ```bash
 npm install -D @tailwindcss/jit tailwindcss postcss
@@ -118,7 +124,7 @@ module.exports = {
 }
 ```
 
-Next, create a `tailwind.config.js` file and specify the CSS files we want to purge. The JIT compiler will remove the unused CSS classes from the files that match the pattern in the config. We’ll be running purge on our Nunjucks templates in `src` and the resulting HTML files in `dist` that get generated after 11ty runs. If you had other files that contain Tailwind classes you would want to add them below. 
+Next, create a `tailwind.config.js` file and specify the CSS files we want to purge. The JIT compiler will remove the unused CSS classes from the files that match the pattern in the config. We’ll be running purge on our Nunjucks templates in `src` and the resulting HTML files in `dist` that get generated after 11ty runs. If you had other files that contain Tailwind classes you would want to add them below.
 
 ```js
 module.exports = {
@@ -130,6 +136,7 @@ module.exports = {
 ```
 
 ### Getting Tailwind up and running
+
 To finish up with the Tailwind install, we’re going to create a new folder `src/assets/styles`. This will be where our Tailwind CSS file lives.
 
 ```js
@@ -147,7 +154,7 @@ Next, add `tailwind.css` to `assets/styles`. And paste the following code into i
 @tailwind utilities;
 ```
 
-We’re also going to install `postcss-cli` and `npm-run-all`. PostCSS cli will let us run `postcss` on the command line - through an npm command. We’ll also want to run both our 11ty server and postcss in parallel, that’s where `npm-run-all` comes in. 
+We’re also going to install `postcss-cli` and `npm-run-all`. PostCSS cli will let us run `postcss` on the command line - through an npm command. We’ll also want to run both our 11ty server and postcss in parallel, that’s where `npm-run-all` comes in.
 
 ```bash
 npm install -D postcss-cli npm-run-all
@@ -181,9 +188,11 @@ npm start
 ![](Screen%20Shot%202021-03-28%20at%2012.04.19%20pm.png "A styled Tailwind page")
 
 ## Optimizing for production
+
 Optimizing for production means minifying the CSS code. With Tailwind JIT we’re already purging the CSS for both development and production. But we still want to reduce the filesize as much as possible when building to production. We’re going to use `cssnano` to minify our CSS for us.
 
 ### Setting up cssnano
+
 First, we’ll install `cssnano` as a dev dependency:
 
 ```html
@@ -210,6 +219,7 @@ module.exports = {
 Since our build script already targets production. We can run `npm build` and navigate to the `dist` folder to find the minified CSS.
 
 ### (Optional) Building a separate css file for production
+
 Right now, both our production and development css gets built to the same file. But it might be nice to be explicit about which file is for production and which file isn’t. We’re going to alter our project to build to `style.min.css` for production instead.
 
 Create a new, `_data`, folder under `src`:
@@ -248,4 +258,5 @@ Finally, update our `build` command in the package.json to:
 Now run `npm run build` and navigate to the `dist` folder. Under `src/assets/styles` you should find `style.min.css` which will contain all your minified css.
 
 ## Conclusion
+
 I hope this helped you get started on your tailwind + 11ty journey! The 11ty application in this tutorial, doesn’t do anything too fancy. But the steps to get Tailwind JIT compiler should be transferrable to most projects. If you wanted the full source code here’s the [Github repo](https://github.com/jonathanyeong/eleventy-tailwind-site "11ty tailwind github repo").
