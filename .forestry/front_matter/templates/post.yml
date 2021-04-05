@@ -32,6 +32,7 @@ fields:
 pages:
 - src/posts/2020-blog-refresh-the-process-and-lessons-learnt.md
 - src/posts/2020-year-end-review.md
+- src/posts/getting-up-and-running-with-11ty-and-the-tailwind-jit-compiler.md
 - src/posts/hacktoberfest-2020-recap.md
 - src/posts/how-to-make-your-cards-pop.md
 - src/posts/lessons-from-my-first-conference-talk.md
